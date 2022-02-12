@@ -1,0 +1,185 @@
+{
+	"name": "Stream processing",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "Sparkpool01",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "43e8ba8d-8c36-42ed-a813-fa27bd9377f0"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1"
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/c0675ddc-d867-4b54-abe8-24d506dffc0e/resourceGroups/DataMigrationService/providers/Microsoft.Synapse/workspaces/synw-ae-demo/bigDataPools/Sparkpool01",
+				"name": "Sparkpool01",
+				"type": "Spark",
+				"endpoint": "https://synw-ae-demo.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/Sparkpool01",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "3.1",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "markdown",
+				"source": [
+					"# NOTE\n",
+					"\n",
+					"For Spark 3 Cosmos DB connector has slightly different configuration. Please select different snippest if a Spark 3.1 + pool is attached."
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"# Load a streaming Spark DataFrame from a Cosmos DB container\n",
+					"# To select a preferred list of regions in a multi-region Cosmos DB account, add .option(\"spark.cosmos.preferredRegions\", \"<Region1>,<Region2>\")\n",
+					"\n",
+					"# For Spark 2.4\n",
+					"#dfStream = spark.readStream\\\n",
+					"#    .format(\"cosmos.oltp\")\\\n",
+					"#    .option(\"spark.synapse.linkedService\", \"WoodgroveCosmosDb\")\\\n",
+					"#    .option(\"spark.cosmos.container\", \"transactions\")\\\n",
+					"#    .option(\"spark.cosmos.changeFeed.readEnabled\", \"true\")\\\n",
+					"#    .option(\"spark.cosmos.changeFeed.startFromTheBeginning\", \"true\")\\\n",
+					"#    .option(\"spark.cosmos.changeFeed.checkpointLocation\", \"/localReadCheckpointFolder\")\\\n",
+					"#    .option(\"spark.cosmos.changeFeed.queryName\", \"streamQuery\")\\\n",
+					"#    .load()\n",
+					"\n",
+					"# For Spark 3.1 +\n",
+					"dfStream = spark.readStream\\\n",
+					"    .format(\"cosmos.oltp.changeFeed\")\\\n",
+					"    .option(\"spark.synapse.linkedService\", \"WoodgroveCosmosDb\")\\\n",
+					"    .option(\"spark.cosmos.container\", \"transactions\")\\\n",
+					"     .option(\"spark.cosmos.changeFeed.startFrom\", \"Beginning\")\\\n",
+					"     .option(\"spark.cosmos.changeFeed.mode\", \"Incremental\")\\\n",
+					"     .load()\n",
+					""
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"dfStream.isStreaming"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Remove unwanted columns from the columns collection\r\n",
+					"cols = list(set(dfStream.columns) - {'_attachments','_etag','_rid','_self','_ts','collectionType','id','ttl'})\r\n",
+					"\r\n",
+					"changes_clean = dfStream.select(cols)"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"query = (\r\n",
+					"changes_clean\r\n",
+					"    .writeStream\r\n",
+					"    .format(\"memory\")        # memory = store in-memory table (for testing only)\r\n",
+					"    .queryName(\"transactions\")     # counts = name of the in-memory table\r\n",
+					"    .start()\r\n",
+					")"
+				],
+				"attachments": null,
+				"execution_count": 4
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "sparksql"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%sql\r\n",
+					"SELECT COUNT(*) FROM transactions"
+				],
+				"attachments": null,
+				"execution_count": 7
+			}
+		]
+	}
+}

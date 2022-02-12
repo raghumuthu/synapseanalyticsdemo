@@ -1,0 +1,97 @@
+{
+	"name": "SourceDataset_ole",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "publicdata",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "accounts",
+				"container": "mcw-cosmosdb"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"accountID": {
+					"type": "string"
+				},
+				"firstName": {
+					"type": "string"
+				},
+				"lastName": {
+					"type": "string"
+				},
+				"userName": {
+					"type": "string"
+				},
+				"email": {
+					"type": "string"
+				},
+				"gender": {
+					"type": "integer"
+				},
+				"cartId": {
+					"type": "string"
+				},
+				"fullName": {
+					"type": "string"
+				},
+				"dateOfBirth": {
+					"type": "string"
+				},
+				"address": {
+					"type": "object",
+					"properties": {
+						"street": {
+							"type": "string"
+						},
+						"suite": {
+							"type": "string"
+						},
+						"city": {
+							"type": "string"
+						},
+						"state": {
+							"type": "string"
+						},
+						"postalCode": {
+							"type": "string"
+						},
+						"country": {
+							"type": "string"
+						},
+						"geo": {
+							"type": "object",
+							"properties": {
+								"lat": {
+									"type": "number"
+								},
+								"lng": {
+									"type": "number"
+								}
+							}
+						}
+					}
+				},
+				"phone": {
+					"type": "string"
+				},
+				"website": {
+					"type": "string"
+				},
+				"accountAge": {
+					"type": "integer"
+				},
+				"isUserRegistered": {
+					"type": "boolean"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

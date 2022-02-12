@@ -1,0 +1,32 @@
+{
+	"name": "DataflowCreditCard",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "DatasetSqlPoolCreditCard",
+						"type": "DatasetReference"
+					},
+					"name": "sourceCreditCard"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "outputCreditCardCSV",
+						"type": "DatasetReference"
+					},
+					"name": "SinkCreditCard"
+				}
+			],
+			"transformations": [
+				{
+					"name": "SelectCreditCard"
+				}
+			],
+			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table',\n\tstaged: true) ~> sourceCreditCard\nsourceCreditCard select(skipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> SelectCreditCard\nSelectCreditCard sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tumask: 0022,\n\tpreCommands: [],\n\tpostCommands: [],\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> SinkCreditCard"
+		}
+	}
+}

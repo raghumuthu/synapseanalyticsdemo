@@ -1,0 +1,41 @@
+{
+	"name": "PipelineCreditCard",
+	"properties": {
+		"activities": [
+			{
+				"name": "DataflowCreditCard",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "DataflowCreditCard",
+						"type": "DataFlowReference"
+					},
+					"staging": {
+						"linkedService": {
+							"referenceName": "SynapseLabFraudADLS",
+							"type": "LinkedServiceReference"
+						},
+						"folderPath": "synflsaedemo/creditcard"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-02-07T07:46:36Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

@@ -1,0 +1,1743 @@
+{
+	"name": "suspicious_transactions",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "sparkpool02",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "67ccb389-5f61-4d67-ab99-5c5ac8a40d02"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"6b26b935-3fb6-4faf-9863-ca1ad064e6ad": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Elijah99",
+										"1": "Elijah",
+										"2": "0",
+										"3": "A1688852372144260",
+										"4": "1958-12-14T19:00:11.358332+00:00",
+										"5": "460-310-6257 x917",
+										"6": "Elijah_Halvorson83@yahoo.com",
+										"7": "1",
+										"8": "Elijah Halvorson",
+										"9": {
+											"city": "Goodwinview",
+											"state": "",
+											"geo": {
+												"lat": 83.1401,
+												"lng": 160.9702
+											},
+											"country": "GB",
+											"postalCode": "SA18 1BY",
+											"street": "63863 Gulgowski Coves",
+											"suite": "Suite 684"
+										},
+										"10": "houston.name",
+										"11": "false",
+										"12": "bf110ea3-a18e-4f7b-9e83-c30b5cfeea4b",
+										"13": "Halvorson"
+									},
+									{
+										"0": "Ben10",
+										"1": "Ben",
+										"2": "0",
+										"3": "A914800250103917",
+										"4": "1992-10-21T20:42:17.2176696+00:00",
+										"5": "1-574-767-6901",
+										"6": "Ben.Mitchell@gmail.com",
+										"7": "1780",
+										"8": "Ben Mitchell",
+										"9": {
+											"city": "MacGyverhaven",
+											"state": "FL",
+											"geo": {
+												"lat": -18.2714,
+												"lng": 41.6257
+											},
+											"country": "US",
+											"postalCode": "33147",
+											"street": "9537 Kasandra Shores",
+											"suite": "Apt. 181"
+										},
+										"10": "kendall.com",
+										"11": "false",
+										"12": "7d4304a3-1649-437e-bdd8-abb5d4ee32d4",
+										"13": "Mitchell"
+									},
+									{
+										"0": "Mitchell_Senger12",
+										"1": "Mitchell",
+										"2": "0",
+										"3": "A985156178873926",
+										"4": "1964-12-13T00:47:15.251989+00:00",
+										"5": "909.657.0987 x6492",
+										"6": "Mitchell.Senger@hotmail.com",
+										"7": "1974",
+										"8": "Mitchell Senger",
+										"9": {
+											"city": "Leonoraland",
+											"state": "NC",
+											"geo": {
+												"lat": 45.3515,
+												"lng": -64.0029
+											},
+											"country": "US",
+											"postalCode": "27520",
+											"street": "39074 Graham Hills",
+											"suite": "Apt. 436"
+										},
+										"10": "kimberly.net",
+										"11": "false",
+										"12": "cd1df784-3096-49dc-a517-294a55878e4b",
+										"13": "Senger"
+									},
+									{
+										"0": "Wayne_Johnston",
+										"1": "Wayne",
+										"2": "0",
+										"3": "A985157000458853",
+										"4": "1984-02-17T09:49:07.3867119+00:00",
+										"5": "(545) 544-5677 x281",
+										"6": "Wayne21@hotmail.com",
+										"7": "47",
+										"8": "Wayne Johnston",
+										"9": {
+											"city": "Woodrowfort",
+											"state": "ME",
+											"geo": {
+												"lat": -5.7823,
+												"lng": 153.0729
+											},
+											"country": "US",
+											"postalCode": "4530",
+											"street": "781 Goldner Key",
+											"suite": "Suite 791"
+										},
+										"10": "felicita.biz",
+										"11": "false",
+										"12": "3024cda1-1e66-4431-8865-acf4eb8be378",
+										"13": "Johnston"
+									},
+									{
+										"0": "Mandy81",
+										"1": "Mandy",
+										"2": "1",
+										"3": "A1055521465179030",
+										"4": "1997-11-10T10:26:27.4244969+00:00",
+										"5": "359.311.5895 x55626",
+										"6": "Mandy.Altenwerth60@yahoo.com",
+										"7": "1",
+										"8": "Mandy Altenwerth",
+										"9": {
+											"city": "Lake Rhiannonville",
+											"state": "NY",
+											"geo": {
+												"lat": -55.1344,
+												"lng": 86.3462
+											},
+											"country": "US",
+											"postalCode": "11550",
+											"street": "4740 Hand Mountains",
+											"suite": "Suite 304"
+										},
+										"10": "bette.com",
+										"11": "false",
+										"12": "1d85baab-fe19-4e8e-b773-d2bbf69ffb0f",
+										"13": "Altenwerth"
+									},
+									{
+										"0": "Lillian25",
+										"1": "Lillian",
+										"2": "1",
+										"3": "A844428111132028",
+										"4": "1973-02-25T02:54:07.2539536+00:00",
+										"5": "1-556-576-8829",
+										"6": "Lillian_Pacocha61@hotmail.com",
+										"7": "1",
+										"8": "Lillian Pacocha",
+										"9": {
+											"city": "Leoneville",
+											"state": "NH",
+											"geo": {
+												"lat": 37.2405,
+												"lng": -47.3169
+											},
+											"country": "US",
+											"postalCode": "3104",
+											"street": "126 Dandre Ridge",
+											"suite": "Suite 318"
+										},
+										"10": "hanna.info",
+										"11": "false",
+										"12": "73282581-864a-42e8-a619-e3fc15da475f",
+										"13": "Pacocha"
+									},
+									{
+										"0": "Gilberto_Cassin",
+										"1": "Gilberto",
+										"2": "0",
+										"3": "A985157050933417",
+										"4": "1997-07-21T11:08:37.6540195+00:00",
+										"5": "(225) 481-0904 x9208",
+										"6": "Gilberto.Cassin78@hotmail.com",
+										"7": "1",
+										"8": "Gilberto Cassin",
+										"9": {
+											"city": "Hackettview",
+											"state": "",
+											"geo": {
+												"lat": 26.8333,
+												"lng": 168.93
+											},
+											"country": "IS",
+											"postalCode": "400",
+											"street": "751 Faye Drive",
+											"suite": "Apt. 007"
+										},
+										"10": "herminia.info",
+										"11": "false",
+										"12": "21de5eaf-abab-4067-a92d-83f7289f4f96",
+										"13": "Cassin"
+									},
+									{
+										"0": "Edwin74",
+										"1": "Edwin",
+										"2": "0",
+										"3": "A1829581333416340",
+										"4": "1972-05-24T19:15:22.2066087+00:00",
+										"5": "1-685-571-9636",
+										"6": "Edwin.Howell@gmail.com",
+										"7": "2000",
+										"8": "Edwin Howell",
+										"9": {
+											"city": "Houstontown",
+											"state": "NM",
+											"geo": {
+												"lat": 48.0657,
+												"lng": -57.0656
+											},
+											"country": "US",
+											"postalCode": "87144",
+											"street": "4171 Marisol Keys",
+											"suite": "Apt. 817"
+										},
+										"10": "verlie.info",
+										"11": "false",
+										"12": "eb1d19e4-2693-41b1-b29d-bcf500948d79",
+										"13": "Howell"
+									},
+									{
+										"0": "Cynthia19",
+										"1": "Cynthia",
+										"2": "1",
+										"3": "A1899946512980730",
+										"4": "1958-12-17T10:08:14.0405695+00:00",
+										"5": "(998) 613-4815 x297",
+										"6": "Cynthia_Auer14@hotmail.com",
+										"7": "1",
+										"8": "Cynthia Auer",
+										"9": {
+											"city": "Schillerton",
+											"state": "MI",
+											"geo": {
+												"lat": -14.2167,
+												"lng": 135.4547
+											},
+											"country": "US",
+											"postalCode": "48418",
+											"street": "5042 Stamm Square",
+											"suite": "Suite 721"
+										},
+										"10": "ahmed.name",
+										"11": "false",
+										"12": "65620128-5392-47da-b370-e2faa47ca07b",
+										"13": "Auer"
+									},
+									{
+										"0": "Corey_Orn",
+										"1": "Corey",
+										"2": "0",
+										"3": "A1759221046136680",
+										"4": "1978-12-04T19:34:37.1473556+00:00",
+										"5": "500.810.8503",
+										"6": "Corey.Orn@gmail.com",
+										"7": "1",
+										"8": "Corey Orn",
+										"9": {
+											"city": "Kilbackland",
+											"state": "Distrito Federal",
+											"geo": {
+												"lat": 70.6885,
+												"lng": 121.704
+											},
+											"country": "MX",
+											"postalCode": "6000",
+											"street": "59943 Jordy Forge",
+											"suite": "Apt. 828"
+										},
+										"10": "maudie.name",
+										"11": "false",
+										"12": "f763f2ee-106a-4584-bd9e-7d249a1668ee",
+										"13": "Orn"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "userName",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "firstName",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "gender",
+										"type": "bigint"
+									},
+									{
+										"key": "3",
+										"name": "accountID",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "dateOfBirth",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "phone",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "email",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "accountAge",
+										"type": "bigint"
+									},
+									{
+										"key": "8",
+										"name": "fullName",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "address",
+										"type": "StructType(StructField(street,StringType,true), StructField(suite,StringType,true), StructField(city,StringType,true), StructField(state,StringType,true), StructField(postalCode,StringType,true), StructField(country,StringType,true), StructField(geo,StructType(StructField(lat,DoubleType,true), StructField(lng,DoubleType,true)),true))"
+									},
+									{
+										"key": "10",
+										"name": "website",
+										"type": "string"
+									},
+									{
+										"key": "11",
+										"name": "isUserRegistered",
+										"type": "boolean"
+									},
+									{
+										"key": "12",
+										"name": "cartId",
+										"type": "string"
+									},
+									{
+										"key": "13",
+										"name": "lastName",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"2"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"e9bb455b-2efb-4c95-bae3-6219ec3e69ab": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "NOK",
+										"1": "1",
+										"2": "CREDITCARD",
+										"3": "M",
+										"4": "false",
+										"5": "no",
+										"6": "2819",
+										"7": "NA",
+										"8": "2013-06-03T11:57:00",
+										"9": "oppland",
+										"10": "nn-NO",
+										"11": "VISA",
+										"12": "0.061805556",
+										"13": "4",
+										"14": "A844427140414472",
+										"15": "0",
+										"16": "31.45",
+										"17": "9007.0",
+										"18": "7F2AFD7E-F267-483F-B81B-822BCEBB8DA4",
+										"19": "12",
+										"20": "0",
+										"21": "NO",
+										"22": "1637.11232",
+										"23": "2802"
+									},
+									{
+										"0": "RUB",
+										"1": "1",
+										"2": "CREDITCARD",
+										"3": "M",
+										"4": "false",
+										"5": "ru",
+										"6": "169300",
+										"7": "NA",
+										"8": "2013-06-16T16:11:00",
+										"9": "komi",
+										"10": "ru-RU",
+										"11": "VISA",
+										"12": "0.0",
+										"13": "0",
+										"14": "A914801046180478",
+										"15": "2",
+										"16": "46.15",
+										"17": "3499.0",
+										"18": "0EF0D5DC-8F69-4051-ADD4-46625B3EE00C",
+										"19": "19",
+										"20": "0",
+										"21": "RU",
+										"22": "116.44672",
+										"23": "167000"
+									},
+									{
+										"0": "RUB",
+										"1": "1",
+										"2": "CREDITCARD",
+										"3": "M",
+										"4": "false",
+										"5": "ru",
+										"6": "454001",
+										"7": "NA",
+										"8": "2013-06-16T03:51:00",
+										"9": "chelyabinskaya oblast'",
+										"10": "ru-RU",
+										"11": "VISA",
+										"12": "0.0",
+										"13": "0",
+										"14": "A985156917553510",
+										"15": "2",
+										"16": "31.207",
+										"17": "9799.0",
+										"18": "3392BB7F-2A15-4909-A356-6BB16675EC00",
+										"19": "8",
+										"20": "0",
+										"21": "RU",
+										"22": "326.11072",
+										"23": "454000"
+									},
+									{
+										"0": "JPY",
+										"1": "1",
+										"2": "CREDITCARD",
+										"3": "M",
+										"4": "false",
+										"5": "jp",
+										"6": "108-8001",
+										"7": "???",
+										"8": "2013-06-13T00:17:00",
+										"9": "shizuoka",
+										"10": "ja-JP",
+										"11": "VISA",
+										"12": "0.001388889",
+										"13": "0",
+										"14": "A985157026745005",
+										"15": "1",
+										"16": "222.144",
+										"17": "36540.0",
+										"18": "C1BC707F-E92A-4FD4-A709-39C1C7666465",
+										"19": "9",
+										"20": "0",
+										"21": "JP",
+										"22": "403.0362",
+										"23": "420"
+									},
+									{
+										"0": "USD",
+										"1": "1",
+										"2": "CREDITCARD",
+										"3": "M",
+										"4": "false",
+										"5": "us",
+										"6": "60645",
+										"7": "IL",
+										"8": "2013-06-13T00:16:00",
+										"9": "illinois",
+										"10": "en-US",
+										"11": "MC",
+										"12": "0.0",
+										"13": "2",
+										"14": "A1055521420182040",
+										"15": "0",
+										"16": "216.13",
+										"17": "752.68",
+										"18": "5FE36C4E-BDCE-4C58-B35A-2077ED72CDFF",
+										"19": "18",
+										"20": "0",
+										"21": "US",
+										"22": "752.68",
+										"23": "60189"
+									},
+									{
+										"0": "USD",
+										"1": "1",
+										"2": "PAYPAL",
+										"3": "N",
+										"4": "false",
+										"5": "us",
+										"6": "NA",
+										"7": "NA",
+										"8": "2013-04-07T04:58:00",
+										"9": "california",
+										"10": "en-US",
+										"11": "U",
+										"12": "0.838194444",
+										"13": "0",
+										"14": "A1688852068178080",
+										"15": "1",
+										"16": "8.23",
+										"17": "109.99",
+										"18": "833FA1C1-EC94-4F61-AE86-EAF339165BD2",
+										"19": "20",
+										"20": "0",
+										"21": "US",
+										"22": "109.99",
+										"23": "90006"
+									},
+									{
+										"0": "USD",
+										"1": "1",
+										"2": "PAYPAL",
+										"3": "N",
+										"4": "false",
+										"5": "us",
+										"6": "NA",
+										"7": "NA",
+										"8": "2013-04-07T04:58:00",
+										"9": "california",
+										"10": "en-US",
+										"11": "U",
+										"12": "0.838194444",
+										"13": "0",
+										"14": "A1688852068178080",
+										"15": "1",
+										"16": "8.23",
+										"17": "109.99",
+										"18": "833FA1C1-EC94-4F61-AE86-EAF339165BD2",
+										"19": "20",
+										"20": "0",
+										"21": "US",
+										"22": "109.99",
+										"23": "90006"
+									},
+									{
+										"0": "USD",
+										"1": "1",
+										"2": "PAYPAL",
+										"3": "N",
+										"4": "false",
+										"5": "us",
+										"6": "NA",
+										"7": "NA",
+										"8": "2013-04-07T04:58:00",
+										"9": "california",
+										"10": "en-US",
+										"11": "U",
+										"12": "0.838194444",
+										"13": "0",
+										"14": "A1688852068178080",
+										"15": "1",
+										"16": "8.23",
+										"17": "109.99",
+										"18": "833FA1C1-EC94-4F61-AE86-EAF339165BD2",
+										"19": "20",
+										"20": "0",
+										"21": "US",
+										"22": "109.99",
+										"23": "90006"
+									},
+									{
+										"0": "USD",
+										"1": "1",
+										"2": "CREDITCARD",
+										"3": "M",
+										"4": "false",
+										"5": "us",
+										"6": "13209",
+										"7": "NY",
+										"8": "2013-05-25T11:57:00",
+										"9": "new york",
+										"10": "en-US",
+										"11": "VISA",
+										"12": "0.670833333",
+										"13": "0",
+										"14": "A844427390246047",
+										"15": "1",
+										"16": "74.67",
+										"17": "5.39",
+										"18": "B6B66DCD-8211-47F8-A921-AED2FD47536F",
+										"19": "6",
+										"20": "10",
+										"21": "US",
+										"22": "5.39",
+										"23": "12801"
+									},
+									{
+										"0": "USD",
+										"1": "1",
+										"2": "CREDITCARD",
+										"3": "M",
+										"4": "false",
+										"5": "us",
+										"6": "13209",
+										"7": "NY",
+										"8": "2013-05-25T10:56:00",
+										"9": "new york",
+										"10": "en-US",
+										"11": "VISA",
+										"12": "0.628472222",
+										"13": "0",
+										"14": "A844427390246047",
+										"15": "1",
+										"16": "74.67",
+										"17": "5.39",
+										"18": "043408BB-F09D-4E53-B3BB-A24E0AD4BDF6",
+										"19": "5",
+										"20": "10",
+										"21": "US",
+										"22": "5.39",
+										"23": "12801"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "transactionCurrencyCode",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "isSuspicious",
+										"type": "bigint"
+									},
+									{
+										"key": "2",
+										"name": "paymentInstrumentType",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "cvvVerifyResult",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "isProxyIP",
+										"type": "boolean"
+									},
+									{
+										"key": "5",
+										"name": "ipCountryCode",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "paymentBillingPostalCode",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "paymentBillingState",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "transactionDateTime",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "ipState",
+										"type": "string"
+									},
+									{
+										"key": "10",
+										"name": "browserLanguage",
+										"type": "string"
+									},
+									{
+										"key": "11",
+										"name": "cardType",
+										"type": "string"
+									},
+									{
+										"key": "12",
+										"name": "paymentInstrumentAgeInAccount",
+										"type": "double"
+									},
+									{
+										"key": "13",
+										"name": "physicalItemCount",
+										"type": "bigint"
+									},
+									{
+										"key": "14",
+										"name": "accountID",
+										"type": "string"
+									},
+									{
+										"key": "15",
+										"name": "digitalItemCount",
+										"type": "bigint"
+									},
+									{
+										"key": "16",
+										"name": "transactionIPaddress",
+										"type": "string"
+									},
+									{
+										"key": "17",
+										"name": "transactionAmount",
+										"type": "double"
+									},
+									{
+										"key": "18",
+										"name": "transactionID",
+										"type": "string"
+									},
+									{
+										"key": "19",
+										"name": "localHour",
+										"type": "bigint"
+									},
+									{
+										"key": "20",
+										"name": "numPaymentRejects1dPerUser",
+										"type": "bigint"
+									},
+									{
+										"key": "21",
+										"name": "paymentBillingCountryCode",
+										"type": "string"
+									},
+									{
+										"key": "22",
+										"name": "transactionAmountUSD",
+										"type": "double"
+									},
+									{
+										"key": "23",
+										"name": "ipPostcode",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"d3cc406b-d0aa-40c2-8f5c-feb2ce9bab8c": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "GBP",
+										"1": "1-862-465-0689",
+										"2": "Billy",
+										"3": "CREDITCARD",
+										"4": "NW8 7RJ",
+										"5": "2013-04-18T23:21:00",
+										"6": "164.9930556",
+										"7": "2.27",
+										"8": "Billy Carroll",
+										"9": "109.99",
+										"10": "0",
+										"11": "GB",
+										"12": "Carroll",
+										"13": "1968-08-28T15:15:29.1286898+00:00",
+										"14": "Billy_Carroll@hotmail.com",
+										"15": "M",
+										"16": "gb",
+										"17": "NA",
+										"18": "greater london",
+										"19": "en-GB",
+										"20": "VISA",
+										"21": "Billy.Carroll99",
+										"22": "0",
+										"23": "A1759221272127280",
+										"24": "0",
+										"25": "1",
+										"26": "165",
+										"27": "6250BA0F-E8C2-44B8-96DA-AE2CCDA30C91",
+										"28": {
+											"city": "Rutherfordview",
+											"state": "",
+											"geo": {
+												"lat": 27.4389,
+												"lng": -99.3285
+											},
+											"country": "GB",
+											"postalCode": "NW8 7RJ",
+											"street": "592 Winnifred Plaza",
+											"suite": "Apt. 496"
+										},
+										"29": "23",
+										"30": "173.223251",
+										"31": "nw3"
+									},
+									{
+										"0": "GBP",
+										"1": "1-862-465-0689",
+										"2": "Billy",
+										"3": "CREDITCARD",
+										"4": "NW8 7RJ",
+										"5": "2013-04-18T23:21:00",
+										"6": "164.9930556",
+										"7": "2.27",
+										"8": "Billy Carroll",
+										"9": "109.99",
+										"10": "0",
+										"11": "GB",
+										"12": "Carroll",
+										"13": "1968-08-28T15:15:29.1286898+00:00",
+										"14": "Billy_Carroll@hotmail.com",
+										"15": "M",
+										"16": "gb",
+										"17": "NA",
+										"18": "greater london",
+										"19": "en-GB",
+										"20": "VISA",
+										"21": "Billy.Carroll99",
+										"22": "0",
+										"23": "A1759221272127280",
+										"24": "0",
+										"25": "1",
+										"26": "165",
+										"27": "6250BA0F-E8C2-44B8-96DA-AE2CCDA30C91",
+										"28": {
+											"city": "Rutherfordview",
+											"state": "",
+											"geo": {
+												"lat": 27.4389,
+												"lng": -99.3285
+											},
+											"country": "GB",
+											"postalCode": "NW8 7RJ",
+											"street": "592 Winnifred Plaza",
+											"suite": "Apt. 496"
+										},
+										"29": "23",
+										"30": "173.223251",
+										"31": "nw3"
+									},
+									{
+										"0": "GBP",
+										"1": "510-597-7403 x79134",
+										"2": "Patti",
+										"3": "CREDITCARD",
+										"4": "SA10 8EH",
+										"5": "2013-04-28T18:33:00",
+										"6": "0.016666667",
+										"7": "46.208",
+										"8": "Patti Steuber",
+										"9": "219.99",
+										"10": "1",
+										"11": "GB",
+										"12": "Steuber",
+										"13": "1971-12-01T02:28:44.5011608+00:00",
+										"14": "Patti24@gmail.com",
+										"15": "M",
+										"16": "gb",
+										"17": "NA",
+										"18": "greater london",
+										"19": "en-GB",
+										"20": "VISA",
+										"21": "Patti89",
+										"22": "0",
+										"23": "A914801008753489",
+										"24": "1",
+										"25": "2",
+										"26": "1",
+										"27": "FF200F29-1136-49BF-9371-B100DA695E14",
+										"28": {
+											"city": "East Linwoodville",
+											"state": "",
+											"geo": {
+												"lat": 63.8941,
+												"lng": -171.46
+											},
+											"country": "GB",
+											"postalCode": "SA10 8EH",
+											"street": "18880 Anika Extensions",
+											"suite": "Apt. 324"
+										},
+										"29": "18",
+										"30": "346.462251",
+										"31": "ec1r"
+									},
+									{
+										"0": "GBP",
+										"1": "510-597-7403 x79134",
+										"2": "Patti",
+										"3": "CREDITCARD",
+										"4": "SA10 8EH",
+										"5": "2013-04-28T18:33:00",
+										"6": "0.016666667",
+										"7": "46.208",
+										"8": "Patti Steuber",
+										"9": "219.99",
+										"10": "1",
+										"11": "GB",
+										"12": "Steuber",
+										"13": "1971-12-01T02:28:44.5011608+00:00",
+										"14": "Patti24@gmail.com",
+										"15": "M",
+										"16": "gb",
+										"17": "NA",
+										"18": "greater london",
+										"19": "en-GB",
+										"20": "VISA",
+										"21": "Patti89",
+										"22": "0",
+										"23": "A914801008753489",
+										"24": "1",
+										"25": "2",
+										"26": "1",
+										"27": "FF200F29-1136-49BF-9371-B100DA695E14",
+										"28": {
+											"city": "East Linwoodville",
+											"state": "",
+											"geo": {
+												"lat": 63.8941,
+												"lng": -171.46
+											},
+											"country": "GB",
+											"postalCode": "SA10 8EH",
+											"street": "18880 Anika Extensions",
+											"suite": "Apt. 324"
+										},
+										"29": "18",
+										"30": "346.462251",
+										"31": "ec1r"
+									},
+									{
+										"0": "GBP",
+										"1": "799-810-1477",
+										"2": "Leticia",
+										"3": "CREDITCARD",
+										"4": "SW10 0BG",
+										"5": "2013-05-13T19:34:00",
+										"6": "0.0",
+										"7": "31.52",
+										"8": "Leticia Halvorson",
+										"9": "109.99",
+										"10": "0",
+										"11": "GB",
+										"12": "Halvorson",
+										"13": "1994-07-03T13:10:26.0701803+00:00",
+										"14": "Leticia_Halvorson52@hotmail.com",
+										"15": "M",
+										"16": "gb",
+										"17": "NA",
+										"18": "sheffield",
+										"19": "en-GB",
+										"20": "VISA",
+										"21": "Leticia22",
+										"22": "0",
+										"23": "A844427780081014",
+										"24": "1",
+										"25": "1",
+										"26": "1",
+										"27": "26280278-D8F9-4B78-A7F7-A30140212849",
+										"28": {
+											"city": "Jaclynmouth",
+											"state": "",
+											"geo": {
+												"lat": 7.4941,
+												"lng": -95.5985
+											},
+											"country": "GB",
+											"postalCode": "SW10 0BG",
+											"street": "0689 Maximo Lake",
+											"suite": "Apt. 989"
+										},
+										"29": "19",
+										"30": "173.223251",
+										"31": "s1"
+									},
+									{
+										"0": "GBP",
+										"1": "541.886.6912 x9341",
+										"2": "Jimmy",
+										"3": "CREDITCARD",
+										"4": "SK11 8UG",
+										"5": "2013-04-10T22:36:00",
+										"6": "0.017361111",
+										"7": "31.52",
+										"8": "Jimmy Bergnaum",
+										"9": "109.99",
+										"10": "1",
+										"11": "GB",
+										"12": "Bergnaum",
+										"13": "1972-10-05T04:28:49.6456116+00:00",
+										"14": "Jimmy82@hotmail.com",
+										"15": "M",
+										"16": "gb",
+										"17": "NA",
+										"18": "birmingham",
+										"19": "en-GB",
+										"20": "MC",
+										"21": "Jimmy13",
+										"22": "0",
+										"23": "A914800973794539",
+										"24": "0",
+										"25": "1",
+										"26": "1",
+										"27": "35C77926-FDE0-4DC7-BEF3-CD330295047F",
+										"28": {
+											"city": "Marcellahaven",
+											"state": "",
+											"geo": {
+												"lat": 54.4762,
+												"lng": -177.5901
+											},
+											"country": "GB",
+											"postalCode": "SK11 8UG",
+											"street": "67672 Kerluke Falls",
+											"suite": "Apt. 837"
+										},
+										"29": "22",
+										"30": "173.223251",
+										"31": "b1"
+									},
+									{
+										"0": "GBP",
+										"1": "541.886.6912 x9341",
+										"2": "Jimmy",
+										"3": "CREDITCARD",
+										"4": "SK11 8UG",
+										"5": "2013-04-10T22:36:00",
+										"6": "0.017361111",
+										"7": "31.52",
+										"8": "Jimmy Bergnaum",
+										"9": "109.99",
+										"10": "1",
+										"11": "GB",
+										"12": "Bergnaum",
+										"13": "1972-10-05T04:28:49.6456116+00:00",
+										"14": "Jimmy82@hotmail.com",
+										"15": "M",
+										"16": "gb",
+										"17": "NA",
+										"18": "birmingham",
+										"19": "en-GB",
+										"20": "MC",
+										"21": "Jimmy13",
+										"22": "0",
+										"23": "A914800973794539",
+										"24": "0",
+										"25": "1",
+										"26": "1",
+										"27": "35C77926-FDE0-4DC7-BEF3-CD330295047F",
+										"28": {
+											"city": "Marcellahaven",
+											"state": "",
+											"geo": {
+												"lat": 54.4762,
+												"lng": -177.5901
+											},
+											"country": "GB",
+											"postalCode": "SK11 8UG",
+											"street": "67672 Kerluke Falls",
+											"suite": "Apt. 837"
+										},
+										"29": "22",
+										"30": "173.223251",
+										"31": "b1"
+									},
+									{
+										"0": "GBP",
+										"1": "541.886.6912 x9341",
+										"2": "Jimmy",
+										"3": "CREDITCARD",
+										"4": "SK11 8UG",
+										"5": "2013-04-10T22:36:00",
+										"6": "0.017361111",
+										"7": "31.52",
+										"8": "Jimmy Bergnaum",
+										"9": "109.99",
+										"10": "1",
+										"11": "GB",
+										"12": "Bergnaum",
+										"13": "1972-10-05T04:28:49.6456116+00:00",
+										"14": "Jimmy82@hotmail.com",
+										"15": "M",
+										"16": "gb",
+										"17": "NA",
+										"18": "birmingham",
+										"19": "en-GB",
+										"20": "MC",
+										"21": "Jimmy13",
+										"22": "0",
+										"23": "A914800973794539",
+										"24": "0",
+										"25": "1",
+										"26": "1",
+										"27": "35C77926-FDE0-4DC7-BEF3-CD330295047F",
+										"28": {
+											"city": "Marcellahaven",
+											"state": "",
+											"geo": {
+												"lat": 54.4762,
+												"lng": -177.5901
+											},
+											"country": "GB",
+											"postalCode": "SK11 8UG",
+											"street": "67672 Kerluke Falls",
+											"suite": "Apt. 837"
+										},
+										"29": "22",
+										"30": "173.223251",
+										"31": "b1"
+									},
+									{
+										"0": "GBP",
+										"1": "751-599-4210 x827",
+										"2": "Cristina",
+										"3": "CREDITCARD",
+										"4": "B32 3RB",
+										"5": "2013-04-27T19:32:00",
+										"6": "0.0",
+										"7": "5.68",
+										"8": "Cristina Hackett",
+										"9": "109.99",
+										"10": "0",
+										"11": "GB",
+										"12": "Hackett",
+										"13": "1977-09-28T14:09:35.9956483+00:00",
+										"14": "Cristina.Hackett@gmail.com",
+										"15": "M",
+										"16": "gb",
+										"17": "NA",
+										"18": "greater london",
+										"19": "en-GB",
+										"20": "VISA",
+										"21": "Cristina20",
+										"22": "0",
+										"23": "A844427784905148",
+										"24": "1",
+										"25": "1",
+										"26": "1",
+										"27": "4722B11A-DFC4-4022-8BAD-39C4E6FA8E48",
+										"28": {
+											"city": "Port Verlaville",
+											"state": "",
+											"geo": {
+												"lat": 82.8395,
+												"lng": -48.0517
+											},
+											"country": "GB",
+											"postalCode": "B32 3RB",
+											"street": "1370 Jean Station",
+											"suite": "Suite 725"
+										},
+										"29": "19",
+										"30": "173.223251",
+										"31": "w10"
+									},
+									{
+										"0": "GBP",
+										"1": "751-599-4210 x827",
+										"2": "Cristina",
+										"3": "CREDITCARD",
+										"4": "B32 3RB",
+										"5": "2013-04-27T19:32:00",
+										"6": "0.0",
+										"7": "5.68",
+										"8": "Cristina Hackett",
+										"9": "109.99",
+										"10": "0",
+										"11": "GB",
+										"12": "Hackett",
+										"13": "1977-09-28T14:09:35.9956483+00:00",
+										"14": "Cristina.Hackett@gmail.com",
+										"15": "M",
+										"16": "gb",
+										"17": "NA",
+										"18": "greater london",
+										"19": "en-GB",
+										"20": "VISA",
+										"21": "Cristina20",
+										"22": "0",
+										"23": "A844427784905148",
+										"24": "1",
+										"25": "1",
+										"26": "1",
+										"27": "4722B11A-DFC4-4022-8BAD-39C4E6FA8E48",
+										"28": {
+											"city": "Port Verlaville",
+											"state": "",
+											"geo": {
+												"lat": 82.8395,
+												"lng": -48.0517
+											},
+											"country": "GB",
+											"postalCode": "B32 3RB",
+											"street": "1370 Jean Station",
+											"suite": "Suite 725"
+										},
+										"29": "19",
+										"30": "173.223251",
+										"31": "w10"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "transactionCurrencyCode",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "phone",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "firstName",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "paymentInstrumentType",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "paymentBillingPostalCode",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "transactionDateTime",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "paymentInstrumentAgeInAccount",
+										"type": "double"
+									},
+									{
+										"key": "7",
+										"name": "transactionIPaddress",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "fullName",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "transactionAmount",
+										"type": "double"
+									},
+									{
+										"key": "10",
+										"name": "numPaymentRejects1dPerUser",
+										"type": "bigint"
+									},
+									{
+										"key": "11",
+										"name": "paymentBillingCountryCode",
+										"type": "string"
+									},
+									{
+										"key": "12",
+										"name": "lastName",
+										"type": "string"
+									},
+									{
+										"key": "13",
+										"name": "dateOfBirth",
+										"type": "string"
+									},
+									{
+										"key": "14",
+										"name": "email",
+										"type": "string"
+									},
+									{
+										"key": "15",
+										"name": "cvvVerifyResult",
+										"type": "string"
+									},
+									{
+										"key": "16",
+										"name": "ipCountryCode",
+										"type": "string"
+									},
+									{
+										"key": "17",
+										"name": "paymentBillingState",
+										"type": "string"
+									},
+									{
+										"key": "18",
+										"name": "ipState",
+										"type": "string"
+									},
+									{
+										"key": "19",
+										"name": "browserLanguage",
+										"type": "string"
+									},
+									{
+										"key": "20",
+										"name": "cardType",
+										"type": "string"
+									},
+									{
+										"key": "21",
+										"name": "userName",
+										"type": "string"
+									},
+									{
+										"key": "22",
+										"name": "physicalItemCount",
+										"type": "bigint"
+									},
+									{
+										"key": "23",
+										"name": "accountID",
+										"type": "string"
+									},
+									{
+										"key": "24",
+										"name": "gender",
+										"type": "bigint"
+									},
+									{
+										"key": "25",
+										"name": "digitalItemCount",
+										"type": "bigint"
+									},
+									{
+										"key": "26",
+										"name": "accountAge",
+										"type": "bigint"
+									},
+									{
+										"key": "27",
+										"name": "transactionID",
+										"type": "string"
+									},
+									{
+										"key": "28",
+										"name": "address",
+										"type": "StructType(StructField(street,StringType,true), StructField(suite,StringType,true), StructField(city,StringType,true), StructField(state,StringType,true), StructField(postalCode,StringType,true), StructField(country,StringType,true), StructField(geo,StructType(StructField(lat,DoubleType,true), StructField(lng,DoubleType,true)),true))"
+									},
+									{
+										"key": "29",
+										"name": "localHour",
+										"type": "bigint"
+									},
+									{
+										"key": "30",
+										"name": "transactionAmountUSD",
+										"type": "double"
+									},
+									{
+										"key": "31",
+										"name": "ipPostcode",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"6"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"a3fe2d4c-341e-4b4e-bbcf-344b7af2b9a3": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "0.0",
+										"1": "am",
+										"2": "0",
+										"3": "3"
+									},
+									{
+										"0": "0.0",
+										"1": "af",
+										"2": "0",
+										"3": "21"
+									},
+									{
+										"0": "0.0",
+										"1": "ag",
+										"2": "0",
+										"3": "3"
+									},
+									{
+										"0": "0.0",
+										"1": "al",
+										"2": "0",
+										"3": "2"
+									},
+									{
+										"0": "0.0",
+										"1": "NA",
+										"2": "0",
+										"3": "6"
+									},
+									{
+										"0": "0.0",
+										"1": "ae",
+										"2": "0",
+										"3": "64"
+									},
+									{
+										"0": "0.0",
+										"1": "at",
+										"2": "0",
+										"3": "202"
+									},
+									{
+										"0": "0.0",
+										"1": "be",
+										"2": "0",
+										"3": "401"
+									},
+									{
+										"0": "0.0",
+										"1": "ar",
+										"2": "0",
+										"3": "216"
+									},
+									{
+										"0": "0.0",
+										"1": "au",
+										"2": "0",
+										"3": "2645"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "PercentSuspicious",
+										"type": "double"
+									},
+									{
+										"key": "1",
+										"name": "ipCountryCode",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "SuspiciousTransactionCount",
+										"type": "bigint"
+									},
+									{
+										"key": "3",
+										"name": "TotalTransactionCount",
+										"type": "bigint"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/c0675ddc-d867-4b54-abe8-24d506dffc0e/resourceGroups/DataMigrationService/providers/Microsoft.Synapse/workspaces/synw-ae-demo/bigDataPools/sparkpool02",
+				"name": "sparkpool02",
+				"type": "Spark",
+				"endpoint": "https://synw-ae-demo.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/sparkpool02",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"collapsed": false
+				},
+				"source": [
+					"accounts = spark.read\\\r\n",
+					"    .format(\"cosmos.olap\")\\\r\n",
+					"    .option(\"spark.synapse.linkedService\", \"WoodgroveCosmosDb\")\\\r\n",
+					"    .option(\"spark.cosmos.container\", \"metadata\")\\\r\n",
+					"    .load()\r\n",
+					"\r\n",
+					"unwanted_cols = {'_attachments','_etag','_rid','_self','_ts','collectionType','id','ttl','SuspiciousTransactionCount','TotalTransactionCount','PercentSuspicious'}\r\n",
+					"\r\n",
+					"# Remove unwanted columns from the columns collection\r\n",
+					"cols = list(set(accounts.columns) - unwanted_cols)\r\n",
+					"\r\n",
+					"accounts = accounts.select(cols)\r\n",
+					"\r\n",
+					"display(accounts.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"suspicious = spark.read\\\r\n",
+					"    .format(\"cosmos.olap\")\\\r\n",
+					"    .option(\"spark.synapse.linkedService\", \"WoodgroveCosmosDb\")\\\r\n",
+					"    .option(\"spark.cosmos.container\", \"suspicious_transactions\")\\\r\n",
+					"    .load()"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"suspicious_transactions = (suspicious\r\n",
+					"    .where(\"collectionType == 'SuspiciousTransactions'\"))\r\n",
+					"\r\n",
+					"# Remove columns that exist in both this Dataframe and the accounts Dataframe\r\n",
+					"duplicate_cols = {'accountPostalCode', 'accountState', 'accountCountry', 'accountAge', 'isUserRegistered'}\r\n",
+					"\r\n",
+					"# Remove unwanted columns from the columns collection\r\n",
+					"cols = list(set(suspicious_transactions.columns) - unwanted_cols - duplicate_cols)\r\n",
+					"\r\n",
+					"suspicious_transactions = suspicious_transactions.select(cols)"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(suspicious_transactions.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 4
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"suspicious_transactions_accounts = suspicious_transactions.join(accounts, on=['accountID'], how='inner')\r\n",
+					"\r\n",
+					"# Set the columns to only the ones we want\r\n",
+					"cols = list({'accountID','transactionCurrencyCode','paymentInstrumentType','ipCountryCode',\r\n",
+					"    'transactionDateTime', 'paymentInstrumentAgeInAccount', 'transactionIPaddress', 'paymentBillingCountryCode',\r\n",
+					"    'cvvVerifyResult', 'paymentBillingState', 'browserLanguage', 'digitalItemCount', 'physicalItemCount',\r\n",
+					"    'transactionID', 'localHour', 'transactionAmountUSD', 'ipPostcode', 'paymentBillingPostalCode', 'transactionAmount',\r\n",
+					"    'numPaymentRejects1dPerUser', 'ipState', 'cardType', 'accountAge', 'userName', 'firstName', 'lastName',\r\n",
+					"    'gender', 'dateOfBirth', 'phone', 'email', 'address', 'fullName'})\r\n",
+					"\r\n",
+					"suspicious_transactions_accounts = suspicious_transactions_accounts.select(cols)\r\n",
+					"\r\n",
+					"display(suspicious_transactions_accounts.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 5
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"suspicious_agg = (suspicious\r\n",
+					"    .where(\"collectionType == 'SuspiciousAgg'\"))\r\n",
+					"\r\n",
+					"# Set the columns to only the ones we want\r\n",
+					"cols = list({'SuspiciousTransactionCount','TotalTransactionCount','PercentSuspicious','ipCountryCode'})\r\n",
+					"\r\n",
+					"suspicious_agg = suspicious_agg.select(cols)\r\n",
+					"\r\n",
+					"display(suspicious_agg.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 6
+			}
+		]
+	}
+}

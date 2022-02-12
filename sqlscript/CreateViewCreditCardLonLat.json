@@ -1,0 +1,17 @@
+{
+	"name": "CreateViewCreditCardLonLat",
+	"properties": {
+		"content": {
+			"query": "CREATE VIEW dbo.CreditCardLonLat AS\nSELECT\n        credit.Time,\n        city.name,\n        city.lon,\n        city.lat,\n        city.alpha2,\n        country.companyen,\n        credit.V1,\n        credit.V2,\n        credit.V3,\n        credit.V4,\n        credit.V5,\n        credit.V6,\n        credit.V7,\n        credit.V8,\n        credit.V9,\n        credit.V10,\n        credit.V11,\n        credit.V12,\n        credit.V13,\n        credit.V14,\n        credit.V15,\n        credit.V16,\n        credit.V17,\n        credit.V18,\n        credit.V19,\n        credit.V20,\n        credit.V21,\n        credit.V22,\n        credit.V23,\n        credit.V24,\n        credit.V25,\n        credit.V26,\n        credit.V27,\n        credit.V28,\n        credit.Amount,\n        credit.Class,\n        credit.id\nFROM\nOPENROWSET(\n        BULK 'https://syndlsaedemo.blob.core.windows.net/synapse/CreditCardScored.csv',\n        FORMAT = 'CSV',\n        FIELDTERMINATOR =',',\n        FIRSTROW = 2,\n        ESCAPECHAR = '\\\\'\n    )\n    WITH (\n        [Time] float,\n        [V1] float,[V2] float,[V3] float,[V4] float,[V5] float,[V6] float,[V7] float,[V8] float,[V9] float,[V10] float,\n        [V11] float,[V12] float,[V13] float,[V14] float,[V15] float,[V16] float,[V17] float,[V18] float,[V19] float,[V20] float,\n        [V21] float,[V22] float,[V23] float,[V24] float,[V25] float,[V26] float,[V27] float,[V28] float,\n        [Amount] float,[Class] int,[id] varchar(20)\n    ) AS [credit]\nLEFT JOIN\nOPENROWSET(\n        BULK 'https://syndlsaedemo.blob.core.windows.net/synapse/CityList.csv',\n        FORMAT = 'CSV',\n        FIELDTERMINATOR =',',\n        FIRSTROW = 2,\n        ESCAPECHAR = '\\\\'\n    )\n    WITH (\n        [id] VARCHAR (20) ,\n        [name] VARCHAR (100) COLLATE Latin1_General_100_CI_AI_SC_UTF8,\n        [state] VARCHAR (10) ,\n        [alpha2] VARCHAR (2) ,\n        [lon] float,\n        [lat] float\n    ) AS [city] ON\n    credit.id = city.id\nLEFT JOIN\nOPENROWSET(\n        BULK 'https://syndlsaedemo.blob.core.windows.net/synapse/CountryList.csv',\n        FORMAT = 'CSV',\n        FIELDTERMINATOR =',',\n        FIRSTROW = 2,\n        ESCAPECHAR = '\\\\'\n    )\n    WITH (\n        [companyjp] VARCHAR (20) COLLATE Latin1_General_100_CI_AI_SC_UTF8,\n        [companyen] VARCHAR (100) COLLATE Latin1_General_100_CI_AI_SC_UTF8,\n        [numeric] decimal,\n        [alpha3] VARCHAR (3) ,\n        [alpha2] VARCHAR (2) ,\n        [location] VARCHAR (100) COLLATE Latin1_General_100_CI_AI_SC_UTF8,\n        [subvivision] VARCHAR (15) COLLATE Latin1_General_100_CI_AI_SC_UTF8\n    ) AS [country] ON\n    city.alpha2 = country.alpha2",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "synapse",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

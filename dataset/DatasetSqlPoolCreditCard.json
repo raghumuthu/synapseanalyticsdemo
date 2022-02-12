@@ -1,0 +1,17 @@
+{
+	"name": "DatasetSqlPoolCreditCard",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FraudDetectionSynapse",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "synapse",
+			"table": "CreditCard"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

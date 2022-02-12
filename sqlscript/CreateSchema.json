@@ -1,0 +1,17 @@
+{
+	"name": "CreateSchema",
+	"properties": {
+		"content": {
+			"query": "CREATE SCHEMA synapse",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "synapsesql",
+				"poolName": "synapsesql"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

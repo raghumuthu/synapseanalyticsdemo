@@ -1,0 +1,637 @@
+{
+	"name": "Spark table",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "Sparkpool01",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "494a24dd-e09f-4f87-82a1-462fdd6c1d9b"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"746e6fdc-6213-4b9c-a1d2-9e120cbbee63": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "37BEAO+MYG8BAAAAAAAAAA==",
+										"1": "1644298231",
+										"2": "325a11e6-df2e-4773-bc56-913c9e9d3008",
+										"3": "3A42E0C3-81CD-448B-9FD6-11CBDE7AD0E7",
+										"4": "A985156944897008",
+										"5": "139.99",
+										"6": "139.99",
+										"7": "USD",
+										"8": "13",
+										"9": "107.202",
+										"10": "south carolina",
+										"11": "29601",
+										"12": "us",
+										"13": "false",
+										"14": "en-US",
+										"15": "CREDITCARD",
+										"16": "VISA",
+										"17": "29341",
+										"18": "SC",
+										"19": "US",
+										"20": "M",
+										"21": "1",
+										"22": "0",
+										"23": "29341",
+										"24": "SC",
+										"25": "US",
+										"26": "1",
+										"27": "true",
+										"28": "0.0",
+										"29": "0",
+										"30": "2013-04-09T18:27:00",
+										"31": "Transaction",
+										"32": "\"f70035bc-0000-0100-0000-6201fff70000\""
+									},
+									{
+										"0": "37BEAO+MYG8CAAAAAAAAAA==",
+										"1": "1644298231",
+										"2": "9eee86f4-54ce-4e50-a33e-872c256c50e7",
+										"3": "4330296C-EAE2-4C38-B697-7EAE90AB858E",
+										"4": "A844427824220410",
+										"5": "103.99",
+										"6": "103.99",
+										"7": "USD",
+										"8": "13",
+										"9": "173.72",
+										"10": "virginia",
+										"11": "22701",
+										"12": "us",
+										"13": "false",
+										"14": "en-US",
+										"15": "CREDITCARD",
+										"16": "MC",
+										"17": "22960",
+										"18": "VA",
+										"19": "US",
+										"20": "M",
+										"21": "1",
+										"22": "0",
+										"23": "35811",
+										"24": "AL",
+										"25": "US",
+										"26": "322",
+										"27": "false",
+										"28": "6.94444E-4",
+										"29": "0",
+										"30": "2013-04-09T18:12:00",
+										"31": "Transaction",
+										"32": "\"f70036bc-0000-0100-0000-6201fff70000\""
+									},
+									{
+										"0": "37BEAO+MYG8DAAAAAAAAAA==",
+										"1": "1644298231",
+										"2": "b8289284-9d35-4669-8a3d-a492b5bd1cc4",
+										"3": "00907207-C21C-420E-BC2A-1DC341870FD5",
+										"4": "A1055521384020280",
+										"5": "219.99",
+										"6": "219.99",
+										"7": "USD",
+										"8": "13",
+										"9": "151.196",
+										"10": "maryland",
+										"11": "21050",
+										"12": "us",
+										"13": "false",
+										"14": "en-US",
+										"15": "CREDITCARD",
+										"16": "AMEX",
+										"17": "21050",
+										"18": "MD",
+										"19": "US",
+										"20": "M",
+										"21": "1",
+										"22": "0",
+										"23": "21050",
+										"24": "MD",
+										"25": "US",
+										"26": "1",
+										"27": "false",
+										"28": "0.0",
+										"29": "0",
+										"30": "2013-04-09T18:11:00",
+										"31": "Transaction",
+										"32": "\"f70037bc-0000-0100-0000-6201fff70000\""
+									},
+									{
+										"0": "37BEAO+MYG8EAAAAAAAAAA==",
+										"1": "1644298231",
+										"2": "fa5f19f1-f6c1-466f-8e73-87e0a9eac6ae",
+										"3": "DADC8830-DA7A-4222-BC6B-3E7E79AA7E5B",
+										"4": "A1899946105203210",
+										"5": "19.99",
+										"6": "19.99",
+										"7": "USD",
+										"8": "13",
+										"9": "199.3",
+										"10": "michigan",
+										"11": "48611",
+										"12": "us",
+										"13": "false",
+										"14": "en-US",
+										"15": "CREDITCARD",
+										"16": "VISA",
+										"17": "48640",
+										"18": "MI",
+										"19": "US",
+										"20": "M",
+										"21": "1",
+										"22": "0",
+										"23": "48640",
+										"24": "MI",
+										"25": "US",
+										"26": "1464",
+										"27": "false",
+										"28": "29.00138889",
+										"29": "0",
+										"30": "2013-04-09T18:07:00",
+										"31": "Transaction",
+										"32": "\"f70038bc-0000-0100-0000-6201fff70000\""
+									},
+									{
+										"0": "37BEAO+MYG8FAAAAAAAAAA==",
+										"1": "1644298231",
+										"2": "b1f4eb62-82c3-4ae9-be19-c215e2c36794",
+										"3": "D38C4128-D204-4572-AF8E-FD81FD0BEFF0",
+										"4": "A985156985739396",
+										"5": "233.19",
+										"6": "233.19",
+										"7": "USD",
+										"8": "12",
+										"9": "71.173",
+										"10": "pennsylvania",
+										"11": "18540",
+										"12": "us",
+										"13": "false",
+										"14": "en-US",
+										"15": "CREDITCARD",
+										"16": "VISA",
+										"17": "18644",
+										"18": "PA",
+										"19": "US",
+										"20": "M",
+										"21": "1",
+										"22": "0",
+										"23": "18644",
+										"24": "PA",
+										"25": "US",
+										"26": "1",
+										"27": "false",
+										"28": "0.0",
+										"29": "0",
+										"30": "2013-04-09T17:03:00",
+										"31": "Transaction",
+										"32": "\"f70039bc-0000-0100-0000-6201fff70000\""
+									},
+									{
+										"0": "37BEAO+MYG8GAAAAAAAAAA==",
+										"1": "1644298231",
+										"2": "b6ad91c3-31b4-4acc-bc11-998e71d1222c",
+										"3": "BB2EAACE-8BB3-44FE-9EDB-F0F8F3354E97",
+										"4": "A985156291249097",
+										"5": "145.59",
+										"6": "145.59",
+										"7": "USD",
+										"8": "12",
+										"9": "74.247",
+										"10": "louisiana",
+										"11": "71108",
+										"12": "us",
+										"13": "false",
+										"14": "en-US",
+										"15": "CREDITCARD",
+										"16": "MC",
+										"17": "71107",
+										"18": "LA",
+										"19": "US",
+										"20": "M",
+										"21": "1",
+										"22": "0",
+										"23": "71107",
+										"24": "LA",
+										"25": "US",
+										"26": "1",
+										"27": "false",
+										"28": "0.0",
+										"29": "0",
+										"30": "2013-04-09T18:20:00",
+										"31": "Transaction",
+										"32": "\"f7003abc-0000-0100-0000-6201fff70000\""
+									},
+									{
+										"0": "37BEAO+MYG8HAAAAAAAAAA==",
+										"1": "1644298231",
+										"2": "0a2379c1-cb31-4fe3-a438-27bde7a66bb1",
+										"3": "AF0E9688-E840-4AB3-BB6C-46F431ABFD42",
+										"4": "A1899946933449070",
+										"5": "159.159943",
+										"6": "159.82",
+										"7": "CAD",
+										"8": "12",
+										"9": "24.2",
+										"10": "quebec",
+										"11": "h2y 2j7",
+										"12": "ca",
+										"13": "false",
+										"14": "en-CA",
+										"15": "CREDITCARD",
+										"16": "VISA",
+										"17": "J0R1A0",
+										"18": "QC",
+										"19": "CA",
+										"20": "M",
+										"21": "1",
+										"22": "0",
+										"23": "J0R1A0",
+										"24": "QC",
+										"25": "CA",
+										"26": "1",
+										"27": "false",
+										"28": "0.0",
+										"29": "0",
+										"30": "2013-04-09T17:26:00",
+										"31": "Transaction",
+										"32": "\"f7003bbc-0000-0100-0000-6201fff70000\""
+									},
+									{
+										"0": "37BEAO+MYG8IAAAAAAAAAA==",
+										"1": "1644298231",
+										"2": "578c84d5-9612-43a8-b871-907f9ef19a2e",
+										"3": "63DE9C5F-F661-4A22-B15C-02A3D1DA9686",
+										"4": "A844427834194356",
+										"5": "626.86",
+										"6": "626.86",
+										"7": "USD",
+										"8": "12",
+										"9": "76.24",
+										"10": "massachusetts",
+										"11": "2139",
+										"12": "us",
+										"13": "false",
+										"14": "en-US",
+										"15": "CREDITCARD",
+										"16": "AMEX",
+										"17": "2110",
+										"18": "MA",
+										"19": "US",
+										"20": "M",
+										"21": "1",
+										"22": "0",
+										"23": "2110",
+										"24": "MA",
+										"25": "US",
+										"26": "1",
+										"27": "false",
+										"28": "0.002083333",
+										"29": "1",
+										"30": "2013-04-09T17:09:00",
+										"31": "Transaction",
+										"32": "\"f7003cbc-0000-0100-0000-6201fff70000\""
+									},
+									{
+										"0": "37BEAO+MYG8JAAAAAAAAAA==",
+										"1": "1644298231",
+										"2": "ea49c183-20f8-481d-bb64-4580582b3a92",
+										"3": "8960363C-D337-4831-82AE-5D43274F55C1",
+										"4": "A844427828388427",
+										"5": "139.99",
+										"6": "139.99",
+										"7": "USD",
+										"8": "10",
+										"9": "75.83",
+										"10": "california",
+										"11": "91604",
+										"12": "us",
+										"13": "false",
+										"14": "en-US",
+										"15": "CREDITCARD",
+										"16": "VISA",
+										"17": "90069",
+										"18": "CA",
+										"19": "US",
+										"20": "M",
+										"21": "1",
+										"22": "0",
+										"23": "90212",
+										"24": "CA",
+										"25": "US",
+										"26": "1",
+										"27": "false",
+										"28": "0.0",
+										"29": "0",
+										"30": "2013-04-09T18:24:00",
+										"31": "Transaction",
+										"32": "\"f7003dbc-0000-0100-0000-6201fff70000\""
+									},
+									{
+										"0": "37BEAO+MYG8KAAAAAAAAAA==",
+										"1": "1644298231",
+										"2": "aed6f785-ba04-4105-8bd9-86b6b192ebd1",
+										"3": "B5CB05EA-EB36-4343-8033-6C3EB5FF2DE6",
+										"4": "A914800956519942",
+										"5": "228.79",
+										"6": "228.79",
+										"7": "USD",
+										"8": "11",
+										"9": "12.166",
+										"10": "alabama",
+										"11": "36117",
+										"12": "us",
+										"13": "false",
+										"14": "en-US",
+										"15": "CREDITCARD",
+										"16": "AMEX",
+										"17": "36123-5019",
+										"18": "AL",
+										"19": "US",
+										"20": "M",
+										"21": "1",
+										"22": "0",
+										"23": "36123-5019",
+										"24": "AL",
+										"25": "US",
+										"26": "6",
+										"27": "false",
+										"28": "0.0",
+										"29": "0",
+										"30": "2013-04-09T17:08:00",
+										"31": "Transaction",
+										"32": "\"f7003ebc-0000-0100-0000-6201fff70000\""
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "_rid",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "_ts",
+										"type": "bigint"
+									},
+									{
+										"key": "2",
+										"name": "id",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "transactionID",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "accountID",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "transactionAmountUSD",
+										"type": "double"
+									},
+									{
+										"key": "6",
+										"name": "transactionAmount",
+										"type": "double"
+									},
+									{
+										"key": "7",
+										"name": "transactionCurrencyCode",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "localHour",
+										"type": "bigint"
+									},
+									{
+										"key": "9",
+										"name": "transactionIPaddress",
+										"type": "string"
+									},
+									{
+										"key": "10",
+										"name": "ipState",
+										"type": "string"
+									},
+									{
+										"key": "11",
+										"name": "ipPostcode",
+										"type": "string"
+									},
+									{
+										"key": "12",
+										"name": "ipCountryCode",
+										"type": "string"
+									},
+									{
+										"key": "13",
+										"name": "isProxyIP",
+										"type": "boolean"
+									},
+									{
+										"key": "14",
+										"name": "browserLanguage",
+										"type": "string"
+									},
+									{
+										"key": "15",
+										"name": "paymentInstrumentType",
+										"type": "string"
+									},
+									{
+										"key": "16",
+										"name": "cardType",
+										"type": "string"
+									},
+									{
+										"key": "17",
+										"name": "paymentBillingPostalCode",
+										"type": "string"
+									},
+									{
+										"key": "18",
+										"name": "paymentBillingState",
+										"type": "string"
+									},
+									{
+										"key": "19",
+										"name": "paymentBillingCountryCode",
+										"type": "string"
+									},
+									{
+										"key": "20",
+										"name": "cvvVerifyResult",
+										"type": "string"
+									},
+									{
+										"key": "21",
+										"name": "digitalItemCount",
+										"type": "bigint"
+									},
+									{
+										"key": "22",
+										"name": "physicalItemCount",
+										"type": "bigint"
+									},
+									{
+										"key": "23",
+										"name": "accountPostalCode",
+										"type": "string"
+									},
+									{
+										"key": "24",
+										"name": "accountState",
+										"type": "string"
+									},
+									{
+										"key": "25",
+										"name": "accountCountry",
+										"type": "string"
+									},
+									{
+										"key": "26",
+										"name": "accountAge",
+										"type": "bigint"
+									},
+									{
+										"key": "27",
+										"name": "isUserRegistered",
+										"type": "boolean"
+									},
+									{
+										"key": "28",
+										"name": "paymentInstrumentAgeInAccount",
+										"type": "double"
+									},
+									{
+										"key": "29",
+										"name": "numPaymentRejects1dPerUser",
+										"type": "bigint"
+									},
+									{
+										"key": "30",
+										"name": "transactionDateTime",
+										"type": "string"
+									},
+									{
+										"key": "31",
+										"name": "collectionType",
+										"type": "string"
+									},
+									{
+										"key": "32",
+										"name": "_etag",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/c0675ddc-d867-4b54-abe8-24d506dffc0e/resourceGroups/DataMigrationService/providers/Microsoft.Synapse/workspaces/synw-ae-demo/bigDataPools/Sparkpool01",
+				"name": "Sparkpool01",
+				"type": "Spark",
+				"endpoint": "https://synw-ae-demo.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/Sparkpool01",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "3.1",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "markdown",
+				"source": [
+					"# NOTE\n",
+					"\n",
+					"For Spark 3 Cosmos DB connector has slightly different configuration. Please select different snippest if a Spark 3.1 + pool is attached."
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"df = spark.read\\\r\n",
+					"     .format(\"cosmos.olap\")\\\r\n",
+					"     .option(\"spark.synapse.linkedService\",\"WoodgroveCosmosDb\")\\\r\n",
+					"     .option(\"spark.cosmos.container\",\"transactions\")\\\r\n",
+					"     .load()\r\n",
+					"\r\n",
+					"display(df.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 1
+			}
+		]
+	}
+}

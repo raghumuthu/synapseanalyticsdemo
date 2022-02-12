@@ -1,0 +1,17 @@
+{
+	"name": "CreateServerlessDB",
+	"properties": {
+		"content": {
+			"query": "CREATE DATABASE synapse",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,640 @@
+{
+	"name": "Explore historical data",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "Sparkpool01",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "2cc76dcf-1b40-4d3c-a904-84981de9473f"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"ce28229b-5ee2-4b14-b352-c3f13f19c1ff": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "5EAC1EBD-1428-4593-898E-F4B56BC3FA06",
+										"1": "A985156985579195",
+										"2": "103.48965",
+										"3": "99",
+										"4": "AUD",
+										"6": "20130409",
+										"7": "95040",
+										"8": "19",
+										"9": "A",
+										"10": "P",
+										"14": "121.219",
+										"15": "victoria",
+										"16": "3000",
+										"17": "au",
+										"18": "FALSE",
+										"20": "en-AU",
+										"21": "CREDITCARD",
+										"22": "VISA",
+										"26": "3122",
+										"27": "Victoria",
+										"28": "AU",
+										"35": "M",
+										"37": "1",
+										"38": "0"
+									},
+									{
+										"0": "48C88D1C-3705-472B-A4A3-5FCE45A5429B",
+										"1": "A985156966855837",
+										"2": "709.79265",
+										"3": "679",
+										"4": "AUD",
+										"6": "20130409",
+										"7": "94256",
+										"9": "A",
+										"10": "P",
+										"14": "216.15",
+										"15": "new york",
+										"16": "14534",
+										"17": "us",
+										"18": "FALSE",
+										"20": "en-AU",
+										"21": "CREDITCARD",
+										"22": "VISA",
+										"26": "2209",
+										"27": "New South Wales",
+										"28": "AU",
+										"35": "M",
+										"37": "0",
+										"38": "1"
+									},
+									{
+										"0": "13B2A110-EA04-42CD-88CC-A85814A5C961",
+										"1": "A844428012992486",
+										"2": "199.75424",
+										"3": "1099",
+										"4": "NOK",
+										"6": "20130409",
+										"7": "95257",
+										"8": "10",
+										"9": "A",
+										"10": "P",
+										"14": "94.246",
+										"15": "oslo",
+										"16": "1006",
+										"17": "no",
+										"18": "FALSE",
+										"20": "nn-NO",
+										"21": "CREDITCARD",
+										"22": "MC",
+										"26": "7033",
+										"28": "NO",
+										"35": "M",
+										"37": "1",
+										"38": "0"
+									},
+									{
+										"0": "C34F7C20-6203-42F5-A41B-AF26177345BE",
+										"1": "A1055521358474530",
+										"2": "2405.33",
+										"3": "2405.33",
+										"4": "USD",
+										"6": "20130409",
+										"7": "102958",
+										"8": "14",
+										"9": "A",
+										"10": "P",
+										"14": "92.97",
+										"15": "dubayy",
+										"16": "0",
+										"17": "ae",
+										"18": "FALSE",
+										"20": "en-US",
+										"21": "CREDITCARD",
+										"22": "AMEX",
+										"26": "33071",
+										"27": "FL",
+										"28": "US",
+										"35": "M",
+										"37": "0",
+										"38": "4"
+									},
+									{
+										"0": "C78542E6-0951-4B63-B420-BEF750B98BCD",
+										"1": "A844428033864668",
+										"2": "362.5582",
+										"3": "269",
+										"4": "EUR",
+										"6": "20130409",
+										"7": "103514",
+										"8": "11",
+										"9": "A",
+										"10": "P",
+										"14": "95.229",
+										"15": "bolzano",
+										"16": "39100",
+										"17": "it",
+										"18": "FALSE",
+										"20": "it-IT",
+										"21": "CREDITCARD",
+										"22": "VISA",
+										"26": "50133",
+										"27": "Firenze",
+										"28": "IT",
+										"35": "U",
+										"37": "1",
+										"38": "0"
+									},
+									{
+										"0": "A4A9AA03-983E-4F18-BBB8-FEC1EC0060BE",
+										"1": "A1055521353270120",
+										"2": "103.48965",
+										"3": "99",
+										"4": "AUD",
+										"6": "20130409",
+										"7": "103535",
+										"8": "20",
+										"9": "A",
+										"10": "P",
+										"14": "124.149",
+										"15": "new south wales",
+										"16": "1005",
+										"17": "au",
+										"18": "FALSE",
+										"20": "en-AU",
+										"21": "CREDITCARD",
+										"22": "MC",
+										"26": "2505",
+										"27": "New South Wales",
+										"28": "AU",
+										"35": "M",
+										"37": "1",
+										"38": "0"
+									},
+									{
+										"0": "FBC10469-8423-4D38-9F2C-06620FF0FE4A",
+										"1": "A1688853588113020",
+										"2": "139.99",
+										"3": "139.99",
+										"4": "USD",
+										"6": "20130409",
+										"7": "102755",
+										"8": "2",
+										"9": "A",
+										"10": "P",
+										"14": "130.65",
+										"15": "california",
+										"16": "95192",
+										"17": "us",
+										"18": "FALSE",
+										"20": "en-US",
+										"21": "CREDITCARD",
+										"22": "VISA",
+										"26": "95112",
+										"27": "CA",
+										"28": "US",
+										"35": "M",
+										"37": "1",
+										"38": "0"
+									},
+									{
+										"0": "29FB803D-0D80-46F6-8993-60BB7E674F3C",
+										"1": "A985156985471727",
+										"2": "26.942522",
+										"3": "19.99",
+										"4": "EUR",
+										"6": "20130409",
+										"7": "104419",
+										"9": "A",
+										"10": "P",
+										"14": "109.99",
+										"15": "bucuresti",
+										"16": "70000",
+										"17": "ro",
+										"18": "FALSE",
+										"20": "de-DE",
+										"21": "CREDITCARD",
+										"22": "VISA",
+										"26": "31608",
+										"28": "DE",
+										"35": "M",
+										"37": "1",
+										"38": "0"
+									},
+									{
+										"0": "5029F82C-527D-402C-B6E7-4552D66AFE2B",
+										"1": "A1759221017494750",
+										"2": "173.223251",
+										"3": "109.99",
+										"4": "GBP",
+										"6": "20130409",
+										"7": "105006",
+										"8": "10",
+										"9": "A",
+										"10": "P",
+										"14": "86.24",
+										"15": "norfolk",
+										"16": "nr2",
+										"17": "gb",
+										"18": "FALSE",
+										"20": "en-GB",
+										"21": "CREDITCARD",
+										"22": "VISA",
+										"26": "NR3 1SW",
+										"28": "GB",
+										"35": "M",
+										"37": "1",
+										"38": "0"
+									},
+									{
+										"0": "77E56BD0-E89F-4AC0-B9AF-1C5D19A88D2B",
+										"1": "A985156984289019",
+										"2": "176.66415",
+										"3": "169",
+										"4": "AUD",
+										"6": "20130409",
+										"7": "111612",
+										"8": "21",
+										"9": "A",
+										"10": "P",
+										"14": "202.142",
+										"15": "victoria",
+										"16": "3840",
+										"17": "au",
+										"18": "FALSE",
+										"20": "en-AU",
+										"21": "CREDITCARD",
+										"22": "VISA",
+										"26": "3875",
+										"27": "Victoria",
+										"28": "AU",
+										"35": "M",
+										"37": "1",
+										"38": "0"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "transactionID",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "accountID",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "transactionAmountUSD",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "transactionAmount",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "transactionCurrencyCode",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "transactionCurrencyConversionRate",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "transactionDate",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "transactionTime",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "localHour",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "transactionScenario",
+										"type": "string"
+									},
+									{
+										"key": "10",
+										"name": "transactionType",
+										"type": "string"
+									},
+									{
+										"key": "11",
+										"name": "transactionMethod",
+										"type": "string"
+									},
+									{
+										"key": "12",
+										"name": "transactionDeviceType",
+										"type": "string"
+									},
+									{
+										"key": "13",
+										"name": "transactionDeviceId",
+										"type": "string"
+									},
+									{
+										"key": "14",
+										"name": "transactionIPaddress",
+										"type": "string"
+									},
+									{
+										"key": "15",
+										"name": "ipState",
+										"type": "string"
+									},
+									{
+										"key": "16",
+										"name": "ipPostcode",
+										"type": "string"
+									},
+									{
+										"key": "17",
+										"name": "ipCountryCode",
+										"type": "string"
+									},
+									{
+										"key": "18",
+										"name": "isProxyIP",
+										"type": "string"
+									},
+									{
+										"key": "19",
+										"name": "browserType",
+										"type": "string"
+									},
+									{
+										"key": "20",
+										"name": "browserLanguage",
+										"type": "string"
+									},
+									{
+										"key": "21",
+										"name": "paymentInstrumentType",
+										"type": "string"
+									},
+									{
+										"key": "22",
+										"name": "cardType",
+										"type": "string"
+									},
+									{
+										"key": "23",
+										"name": "cardNumberInputMethod",
+										"type": "string"
+									},
+									{
+										"key": "24",
+										"name": "paymentInstrumentID",
+										"type": "string"
+									},
+									{
+										"key": "25",
+										"name": "paymentBillingAddress",
+										"type": "string"
+									},
+									{
+										"key": "26",
+										"name": "paymentBillingPostalCode",
+										"type": "string"
+									},
+									{
+										"key": "27",
+										"name": "paymentBillingState",
+										"type": "string"
+									},
+									{
+										"key": "28",
+										"name": "paymentBillingCountryCode",
+										"type": "string"
+									},
+									{
+										"key": "29",
+										"name": "paymentBillingName",
+										"type": "string"
+									},
+									{
+										"key": "30",
+										"name": "shippingAddress",
+										"type": "string"
+									},
+									{
+										"key": "31",
+										"name": "shippingPostalCode",
+										"type": "string"
+									},
+									{
+										"key": "32",
+										"name": "shippingCity",
+										"type": "string"
+									},
+									{
+										"key": "33",
+										"name": "shippingState",
+										"type": "string"
+									},
+									{
+										"key": "34",
+										"name": "shippingCountry",
+										"type": "string"
+									},
+									{
+										"key": "35",
+										"name": "cvvVerifyResult",
+										"type": "string"
+									},
+									{
+										"key": "36",
+										"name": "responseCode",
+										"type": "string"
+									},
+									{
+										"key": "37",
+										"name": "digitalItemCount",
+										"type": "string"
+									},
+									{
+										"key": "38",
+										"name": "physicalItemCount",
+										"type": "string"
+									},
+									{
+										"key": "39",
+										"name": "purchaseProductType",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/c0675ddc-d867-4b54-abe8-24d506dffc0e/resourceGroups/DataMigrationService/providers/Microsoft.Synapse/workspaces/synw-ae-demo/bigDataPools/Sparkpool01",
+				"name": "Sparkpool01",
+				"type": "Spark",
+				"endpoint": "https://synw-ae-demo.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/Sparkpool01",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "3.1",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.load('abfss://synflsaedemo@syndlsaedemo.dfs.core.windows.net/realtimeanalytics/Untagged_Transactions.csv', format='csv'\r\n",
+					"## If header exists uncomment line below\r\n",
+					", header=True\r\n",
+					")\r\n",
+					"display(df.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"transactions = df\r\n",
+					"transactions.select(\"browserType\").distinct().show()"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"transactions.select(\"transactionScenario\").distinct().show()\r\n",
+					"transactions.select(\"transactionType\").distinct().show()"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"transactions.groupBy(\"cvvVerifyResult\").count().sort(\"cvvVerifyResult\").show()"
+				],
+				"attachments": null,
+				"execution_count": 4
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"transactions.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 5
+			}
+		]
+	}
+}

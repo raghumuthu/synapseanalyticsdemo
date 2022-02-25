@@ -9,11 +9,14 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation"
+				"type": "AzureBlobStorageLocation",
+				"fileName": "postalcodes.csv",
+				"folderPath": "bronze",
+				"container": "dev"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
-			"firstRowAsHeader": false,
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": [

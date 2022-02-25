@@ -1,0 +1,69 @@
+{
+	"name": "wwi_comments_adls",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "asadatalake01",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "wwi-comments.csv",
+				"folderPath": "bronze",
+				"container": "dev"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "inreplyto",
+				"type": "String"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "userid",
+				"type": "String"
+			},
+			{
+				"name": "emailaddress",
+				"type": "String"
+			},
+			{
+				"name": "datetime",
+				"type": "String"
+			},
+			{
+				"name": "topic",
+				"type": "String"
+			},
+			{
+				"name": "subject",
+				"type": "String"
+			},
+			{
+				"name": "comment",
+				"type": "String"
+			},
+			{
+				"name": "spamscore",
+				"type": "String"
+			},
+			{
+				"name": "votes",
+				"type": "String"
+			}
+		]
+	}
+}

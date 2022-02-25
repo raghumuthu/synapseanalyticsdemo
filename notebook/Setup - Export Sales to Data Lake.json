@@ -3,6 +3,10 @@
 	"properties": {
 		"nbformat": 4,
 		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "Sparkpool01",
+			"type": "BigDataPoolReference"
+		},
 		"sessionProperties": {
 			"driverMemory": "28g",
 			"driverCores": 4,
@@ -13,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "b013ba3d-ff9c-415d-ad47-3f97b786236d"
+				"spark.autotune.trackingId": "433c31c3-6ced-4c73-9edc-6fd99e3a00d9"
 			}
 		},
 		"metadata": {
@@ -26,17 +30,37 @@
 			"language_info": {
 				"name": "python"
 			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/c0675ddc-d867-4b54-abe8-24d506dffc0e/resourceGroups/DataMigrationService/providers/Microsoft.Synapse/workspaces/synw-ae-demo/bigDataPools/Sparkpool01",
+				"name": "Sparkpool01",
+				"type": "Spark",
+				"endpoint": "https://synw-ae-demo.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/Sparkpool01",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "3.1",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"automaticScaleJobs": false
+			},
 			"sessionKeepAliveTimeout": 30
 		},
 		"cells": [
 			{
 				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					}
+				},
 				"source": [
 					"%%pyspark\n",
 					"wwi_sales = spark \\\n",
 					"    .read \\\n",
 					"    .option(\"sep\",\"|\") \\\n",
-					"    .load('abfss://dev@<primary_storage>.dfs.core.windows.net/bronze/wwi-factsale.csv', format=\"csv\", header=True)\n",
+					"    .load('abfss://dev@synflsaedemo.dfs.core.windows.net/bronze/wwi-factsale.csv', format=\"csv\", header=True)\n",
 					"\n",
 					"wwi_sales = wwi_sales \\\n",
 					"    .withColumnRenamed('Sale Key', 'SaleKey') \\\n",

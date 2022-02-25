@@ -1,6 +1,9 @@
 {
 	"name": "DataflowCreditCard",
 	"properties": {
+		"folder": {
+			"name": "FraudDetection"
+		},
 		"type": "MappingDataFlow",
 		"typeProperties": {
 			"sources": [

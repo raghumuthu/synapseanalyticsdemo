@@ -1,5 +1,5 @@
 {
-	"name": "Notebook 1",
+	"name": "Task2_SparkSQL",
 	"properties": {
 		"nbformat": 4,
 		"nbformat_minor": 2,
@@ -17,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "6e7a40ac-f37b-450b-a084-c922093e2251"
+				"spark.autotune.trackingId": "04ee68a8-34a8-44e6-af9a-2056397f11b0"
 			}
 		},
 		"metadata": {

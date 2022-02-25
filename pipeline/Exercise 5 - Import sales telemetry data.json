@@ -31,7 +31,13 @@
 						"type": "AzureDataExplorerSink"
 					},
 					"enableStaging": false
-				}
+				},
+				"inputs": [
+					{
+						"referenceName": "wwi_sale_small_telemetry_adls",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []

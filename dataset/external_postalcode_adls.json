@@ -21,6 +21,31 @@
 		},
 		"schema": [
 			{
+				"name": "City",
+				"type": "String"
+			},
+			{
+				"name": "State",
+				"type": "String"
+			},
+			{
+				"name": "Zip",
+				"type": "String"
+			},
+			{
+				"name": "Latitude",
+				"type": "String"
+			},
+			{
+				"name": "Longitude",
+				"type": "String"
+			},
+			{
+				"name": "Timezone",
+				"type": "String"
+			},
+			{
+				"name": "DST",
 				"type": "String"
 			}
 		]

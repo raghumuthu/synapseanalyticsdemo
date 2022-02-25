@@ -296,7 +296,7 @@
 									},
 									"additionalHeaders": {
 										"Content-Type": "application/json",
-										"Ocp-Apim-Subscription-Key": "REPLACE-WITH-YOUR-COGNITIVE-KEY"
+										"Ocp-Apim-Subscription-Key": "ec2cf6527003411abfa5a705ea875a7a"
 									}
 								},
 								"sink": {

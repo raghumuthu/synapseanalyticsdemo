@@ -1,6 +1,9 @@
 {
 	"name": "suspicious_transactions",
 	"properties": {
+		"folder": {
+			"name": "FraudDetection"
+		},
 		"nbformat": 4,
 		"nbformat_minor": 2,
 		"bigDataPool": {

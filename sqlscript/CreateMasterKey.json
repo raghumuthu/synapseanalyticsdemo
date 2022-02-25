@@ -1,6 +1,9 @@
 {
 	"name": "CreateMasterKey",
 	"properties": {
+		"folder": {
+			"name": "FraudDetection"
+		},
 		"content": {
 			"query": "CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'BambooPass@word123#'",
 			"metadata": {

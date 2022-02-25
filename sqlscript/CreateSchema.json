@@ -1,6 +1,9 @@
 {
 	"name": "CreateSchema",
 	"properties": {
+		"folder": {
+			"name": "FraudDetection"
+		},
 		"content": {
 			"query": "CREATE SCHEMA synapse",
 			"metadata": {

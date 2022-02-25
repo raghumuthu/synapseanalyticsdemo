@@ -1,6 +1,9 @@
 {
 	"name": "CreateAzureStorageAccountKey",
 	"properties": {
+		"folder": {
+			"name": "FraudDetection"
+		},
 		"content": {
 			"query": "CREATE DATABASE SCOPED CREDENTIAL AzureStorageAccountKey\nWITH IDENTITY = 'syndlsaedemo',\nSECRET = 'O0FkXptIFLnClYXL6HGudme8i1CJX+SWJGbNQTbPOVBAAUvlikRfOLvAwOyWW2W/jk1t4TlfJUuf34770M7cOA==';",
 			"metadata": {

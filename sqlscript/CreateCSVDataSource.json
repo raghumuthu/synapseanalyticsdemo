@@ -1,6 +1,9 @@
 {
 	"name": "CreateCSVDataSource",
 	"properties": {
+		"folder": {
+			"name": "FraudDetection"
+		},
 		"content": {
 			"query": "CREATE EXTERNAL DATA SOURCE CSVDataSource WITH\n(\n    TYPE = HADOOP,\n    LOCATION = 'wasbs://synapse@syndlsaedemo.blob.core.windows.net',\n    CREDENTIAL = AzureStorageAccountKey\n);",
 			"metadata": {

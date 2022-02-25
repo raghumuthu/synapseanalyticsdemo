@@ -1,6 +1,9 @@
 {
 	"name": "SelectIntoCreditCard",
 	"properties": {
+		"folder": {
+			"name": "FraudDetection"
+		},
 		"content": {
 			"query": "DECLARE @modelexample varbinary(max) = (SELECT [Model] FROM synapse.[MLModelExt]);\n\nSELECT\nd.*, p.*\nINTO synapse.CreditCard\nFROM PREDICT(MODEL = @modelexample,\n    DATA = synapse.exCreditCard AS d,\n    RUNTIME = ONNX) WITH (output_label bigint) AS p;",
 			"metadata": {

@@ -1,6 +1,9 @@
 {
 	"name": "CreateServerlessDB",
 	"properties": {
+		"folder": {
+			"name": "FraudDetection"
+		},
 		"content": {
 			"query": "CREATE DATABASE synapse",
 			"metadata": {

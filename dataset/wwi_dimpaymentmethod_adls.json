@@ -1,0 +1,49 @@
+{
+	"name": "wwi_dimpaymentmethod_adls",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "asadatalake01",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "wwi-dimpaymentmethod.csv",
+				"folderPath": "bronze",
+				"container": "dev"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Payment Method Key",
+				"type": "String"
+			},
+			{
+				"name": "WWI Payment Method ID",
+				"type": "String"
+			},
+			{
+				"name": "Payment Method",
+				"type": "String"
+			},
+			{
+				"name": "Valid From",
+				"type": "String"
+			},
+			{
+				"name": "Valid To",
+				"type": "String"
+			},
+			{
+				"name": "Lineage Key",
+				"type": "String"
+			}
+		]
+	}
+}

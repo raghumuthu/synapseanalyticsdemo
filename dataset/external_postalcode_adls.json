@@ -1,0 +1,97 @@
+{
+	"name": "external_postalcode_adls",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "asadatalake01",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string"
+				},
+				"properties": {
+					"type": "object",
+					"properties": {
+						"linkedServiceName": {
+							"type": "object",
+							"properties": {
+								"referenceName": {
+									"type": "string"
+								},
+								"type": {
+									"type": "string"
+								}
+							}
+						},
+						"annotations": {
+							"type": "array"
+						},
+						"type": {
+							"type": "string"
+						},
+						"typeProperties": {
+							"type": "object",
+							"properties": {
+								"location": {
+									"type": "object",
+									"properties": {
+										"type": {
+											"type": "string"
+										},
+										"fileName": {
+											"type": "string"
+										},
+										"folderPath": {
+											"type": "string"
+										},
+										"fileSystem": {
+											"type": "string"
+										}
+									}
+								},
+								"columnDelimiter": {
+									"type": "string"
+								},
+								"escapeChar": {
+									"type": "string"
+								},
+								"firstRowAsHeader": {
+									"type": "boolean"
+								},
+								"quoteChar": {
+									"type": "string"
+								}
+							}
+						},
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"name": {
+										"type": "string"
+									},
+									"type": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"type": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

@@ -5,6 +5,9 @@
 			"referenceName": "WoodgroveCosmosDb",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "OLD"
+		},
 		"annotations": [],
 		"type": "CosmosDbSqlApiCollection",
 		"schema": {},

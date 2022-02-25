@@ -5,6 +5,9 @@
 			"referenceName": "SynapseLabFraudADLS",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "OLD"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

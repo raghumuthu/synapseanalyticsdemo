@@ -5,6 +5,9 @@
 			"referenceName": "publicdata",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "OLD"
+		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {

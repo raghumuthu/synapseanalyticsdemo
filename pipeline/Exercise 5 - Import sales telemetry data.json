@@ -18,7 +18,7 @@
 					"source": {
 						"type": "DelimitedTextSource",
 						"storeSettings": {
-							"type": "AzureBlobFSReadSettings",
+							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
 							"wildcardFileName": "*.csv",
 							"enablePartitionDiscovery": false
@@ -26,9 +26,6 @@
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
 						}
-					},
-					"sink": {
-						"type": "AzureDataExplorerSink"
 					},
 					"enableStaging": false
 				},

@@ -58,6 +58,9 @@
 				]
 			}
 		],
+		"folder": {
+			"name": "FraudDetection"
+		},
 		"annotations": [],
 		"lastPublishTime": "2022-02-08T02:57:00Z"
 	},

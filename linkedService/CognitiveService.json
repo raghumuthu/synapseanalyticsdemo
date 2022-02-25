@@ -1,0 +1,27 @@
+{
+	"name": "CognitiveService",
+	"properties": {
+		"annotations": [],
+		"type": "CognitiveService",
+		"typeProperties": {
+			"subscriptionId": "c0675ddc-d867-4b54-abe8-24d506dffc0e",
+			"resourceGroup": "datamigrationservice",
+			"csName": "cog-aid-demo",
+			"csKind": "CognitiveServices",
+			"csLocation": "eastus",
+			"endPoint": "https://cog-aid-demo.cognitiveservices.azure.com/",
+			"csKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "KeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "CognitiveKey"
+			}
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

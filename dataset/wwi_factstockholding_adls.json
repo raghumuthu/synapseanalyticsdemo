@@ -1,0 +1,61 @@
+{
+	"name": "wwi_factstockholding_adls",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "asadatalake01",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "wwi-factstockholding.csv",
+				"folderPath": "bronze",
+				"container": "dev"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Stock Holding Key",
+				"type": "String"
+			},
+			{
+				"name": "Stock Item Key",
+				"type": "String"
+			},
+			{
+				"name": "Quantity On Hand",
+				"type": "String"
+			},
+			{
+				"name": "Bin Location",
+				"type": "String"
+			},
+			{
+				"name": "Last Stocktake Quantity",
+				"type": "String"
+			},
+			{
+				"name": "Last Cost Price",
+				"type": "String"
+			},
+			{
+				"name": "Reorder Level",
+				"type": "String"
+			},
+			{
+				"name": "Target Stock Level",
+				"type": "String"
+			},
+			{
+				"name": "Lineage Key",
+				"type": "String"
+			}
+		]
+	}
+}

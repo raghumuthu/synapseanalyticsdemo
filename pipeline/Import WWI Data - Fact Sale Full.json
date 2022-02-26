@@ -250,6 +250,12 @@
 						]
 					}
 				},
+				"inputs": [
+					{
+						"referenceName": "wwi_factsale_adls",
+						"type": "DatasetReference"
+					}
+				],
 				"outputs": [
 					{
 						"referenceName": "wwi_factsale_asa",

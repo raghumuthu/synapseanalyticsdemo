@@ -17,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "be482585-cad6-4157-9be4-f3b79f252609"
+				"spark.autotune.trackingId": "df0e3fbd-6d41-4986-9f17-0fc33180f362"
 			}
 		},
 		"metadata": {
@@ -179,12 +179,52 @@
 						"transient": {
 							"deleting": false
 						}
+					},
+					"microsoft": {
+						"language": "scala"
 					}
 				},
 				"source": [
-					""
+					"%%spark\r\n",
+					"\r\n",
+					"// Read the sales into a dataframe\r\n",
+					"val sales = spark.read.format(\"csv\").option(\"header\", \"true\").option(\"inferSchema\", \"true\").option(\"sep\", \"|\").load(s\"$adlsPath/factsale-csv/2012/Q4\")\r\n",
+					"sales.show(5)\r\n",
+					"sales.printSchema()"
 				],
-				"execution_count": null
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "scala"
+					}
+				},
+				"source": [
+					"%%spark\r\n",
+					"\r\n",
+					"// Import libraries for the SQL Analytics connector\r\n",
+					"import com.microsoft.spark.sqlanalytics.utils.Constants\r\n",
+					"import org.apache.spark.sql.SqlAnalyticsConnector._\r\n",
+					"import org.apache.spark.sql.SaveMode\r\n",
+					"\r\n",
+					"// Set target table name\r\n",
+					"var tableName = s\"synapsesql.wwi_staging.Sale\"\r\n",
+					"\r\n",
+					"// Write the retrieved sales data into a staging table in Azure Synapse Analytics.\r\n",
+					"sales.limit(10000).write.mode(SaveMode.Append).sqlanalytics(tableName, Constants.INTERNAL)"
+				],
+				"execution_count": 4
 			}
 		]
 	}

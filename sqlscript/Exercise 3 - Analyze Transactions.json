@@ -1,9 +1,6 @@
 {
 	"name": "Exercise 3 - Analyze Transactions",
 	"properties": {
-		"folder": {
-			"name": "FraudDetection"
-		},
 		"content": {
 			"query": "SELECT \n    CustomerKey, \n    SUM(Quantity) as Quantity\nFROM \n    wwi.FactSale\nGROUP BY \n    CustomerKey",
 			"metadata": {

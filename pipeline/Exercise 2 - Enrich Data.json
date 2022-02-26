@@ -81,7 +81,7 @@
 					"source": {
 						"type": "DelimitedTextSource",
 						"storeSettings": {
-							"type": "AzureBlobFSReadSettings",
+							"type": "AzureBlobStorageReadSettings",
 							"recursive": true
 						},
 						"formatSettings": {
@@ -309,7 +309,7 @@
 								"sink": {
 									"type": "JsonSink",
 									"storeSettings": {
-										"type": "AzureBlobFSWriteSettings"
+										"type": "AzureBlobStorageWriteSettings"
 									},
 									"formatSettings": {
 										"type": "JsonWriteSettings"

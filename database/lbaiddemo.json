@@ -1,0 +1,22 @@
+{
+	"name": "lbaiddemo",
+	"properties": {
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Name": "lbaiddemo",
+		"EntityType": "DATABASE",
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://synflsaedemo@syndlsaedemo.dfs.core.windows.net/lbaiddemo",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "synw-ae-demo-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}

@@ -1,0 +1,22 @@
+{
+	"name": "ld-aiddemo",
+	"properties": {
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Name": "ld-aiddemo",
+		"EntityType": "DATABASE",
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://synflsaedemo@syndlsaedemo.dfs.core.windows.net/ld-aiddemo",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "synw-ae-demo-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}

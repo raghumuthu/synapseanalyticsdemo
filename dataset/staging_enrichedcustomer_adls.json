@@ -2,7 +2,7 @@
 	"name": "staging_enrichedcustomer_adls",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "asadatalake01",
+			"referenceName": "asastore01",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],

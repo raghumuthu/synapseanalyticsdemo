@@ -249,12 +249,6 @@
 						]
 					}
 				},
-				"inputs": [
-					{
-						"referenceName": "wwi_factsale_big_1_adls",
-						"type": "DatasetReference"
-					}
-				],
 				"outputs": [
 					{
 						"referenceName": "wwi_perf_factsale_fast_asa",

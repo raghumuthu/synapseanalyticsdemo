@@ -503,12 +503,6 @@
 						]
 					}
 				},
-				"inputs": [
-					{
-						"referenceName": "wwi_factsale_big_2_adls",
-						"type": "DatasetReference"
-					}
-				],
 				"outputs": [
 					{
 						"referenceName": "wwi_perf_factsale_slow_asa",

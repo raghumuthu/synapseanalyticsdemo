@@ -1,0 +1,22 @@
+{
+	"name": "Database1",
+	"properties": {
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Name": "Database1",
+		"EntityType": "DATABASE",
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://database1@syndlsaedemo.dfs.core.windows.net/",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "synw-ae-demo-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}

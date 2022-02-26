@@ -8,7 +8,7 @@
 		"annotations": [],
 		"type": "RestResource",
 		"typeProperties": {
-			"relativeUrl": "text/analytics/v3.1-preview.3/sentiment?opinionMining=true"
+			"relativeUrl": "text/analytics/v3.1/sentiment?opinionMining=true"
 		},
 		"schema": []
 	},

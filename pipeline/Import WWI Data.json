@@ -1906,12 +1906,6 @@
 						]
 					}
 				},
-				"inputs": [
-					{
-						"referenceName": "wwi_factstockholding_adls",
-						"type": "DatasetReference"
-					}
-				],
 				"outputs": [
 					{
 						"referenceName": "wwi_factstockholding_asa",
@@ -2124,12 +2118,6 @@
 						]
 					}
 				},
-				"inputs": [
-					{
-						"referenceName": "wwi_facttransaction_adls",
-						"type": "DatasetReference"
-					}
-				],
 				"outputs": [
 					{
 						"referenceName": "wwi_facttransaction_asa",

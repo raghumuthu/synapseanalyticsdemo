@@ -7,8 +7,8 @@
 				"language": "sql"
 			},
 			"currentConnection": {
-				"databaseName": "master",
-				"poolName": "Built-in"
+				"databaseName": "synapsesql",
+				"poolName": "synapsesql"
 			},
 			"resultLimit": 5000
 		},

@@ -17,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "04ee68a8-34a8-44e6-af9a-2056397f11b0"
+				"spark.autotune.trackingId": "be482585-cad6-4157-9be4-f3b79f252609"
 			}
 		},
 		"metadata": {
@@ -140,6 +140,51 @@
 					"LIMIT 10"
 				],
 				"execution_count": 5
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"microsoft": {
+						"language": "scala"
+					}
+				},
+				"source": [
+					"%%spark\r\n",
+					"\r\n",
+					"// Set the path to read the WWI Sales files\r\n",
+					"import org.apache.spark.sql.SparkSession\r\n",
+					"\r\n",
+					"// Set the path to the ADLS Gen2 account\r\n",
+					"val adlsPath = \"abfss://wwi@syndlsaedemo.dfs.core.windows.net\""
+				],
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					""
+				],
+				"execution_count": null
 			}
 		]
 	}

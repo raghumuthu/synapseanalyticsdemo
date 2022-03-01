@@ -23,41 +23,6 @@
 			},
 			"dependsOn": [],
 			"location": "eastus"
-		},
-		{
-			"name": "[concat(parameters('workspaceName'), '/Database 1')]",
-			"type": "Microsoft.Synapse/workspaces/databases",
-			"apiVersion": "2019-06-01-preview",
-			"properties": {
-				"Ddls": [
-					{
-						"ActionType": "CREATE",
-						"OldEntity": null,
-						"NewEntity": {
-							"Origin": {
-								"Type": "SPARK"
-							},
-							"Properties": {
-								"IsSyMSCDMDatabase": true
-							},
-							"Name": "Database 1",
-							"EntityType": "DATABASE",
-							"Source": {
-								"Provider": "ADLS",
-								"Location": "abfss://synflsaedemo@syndlsaedemo.dfs.core.windows.net/Database 1",
-								"Properties": {
-									"FormatType": "parquet",
-									"LinkedServiceName": "synw-ae-demo-WorkspaceDefaultStorage"
-								}
-							}
-						},
-						"Source": {
-							"Type": "SPARK"
-						}
-					}
-				]
-			},
-			"dependsOn": []
 		}
 	]
 }

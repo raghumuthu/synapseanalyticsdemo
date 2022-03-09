@@ -1,0 +1,15 @@
+{
+	"name": "asadataexplorer",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataExplorer",
+		"typeProperties": {
+			"endpoint": "https://asadataexploreraiwdemo.synw-ae-demo.kusto.azuresynapse.net",
+			"database": "sales"
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

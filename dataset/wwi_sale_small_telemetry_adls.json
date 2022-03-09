@@ -1,0 +1,40 @@
+{
+	"name": "wwi_sale_small_telemetry_adls",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "asadatalake01",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "sale-small-telemetry",
+				"container": "wwi"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "CustomerId",
+				"type": "String"
+			},
+			{
+				"name": "ProductId",
+				"type": "String"
+			},
+			{
+				"name": "Timestamp",
+				"type": "String"
+			},
+			{
+				"name": "Url",
+				"type": "String"
+			}
+		]
+	}
+}

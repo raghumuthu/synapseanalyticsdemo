@@ -6,7 +6,7 @@
 		"typeProperties": {
 			"subscriptionId": "c0675ddc-d867-4b54-abe8-24d506dffc0e",
 			"resourceGroupName": "DataMigrationService",
-			"mlWorkspaceName": "amlworkspaceann",
+			"mlWorkspaceName": "amlworkspace",
 			"authentication": "MSI"
 		},
 		"connectVia": {

@@ -1,0 +1,17 @@
+{
+	"name": "Exercise  8  -  ML_CustomerPrediction",
+	"properties": {
+		"content": {
+			"query": "-- Create a view to score machine learning models.\nCREATE VIEW wwi_ml.CustomerPrediction\nAS\n-- Select input scoring data and assign aliases.\nWITH InputData AS\n(\n    SELECT\n        [Cost],\n        [Size],\n        [Price],\n        [PrimaryBrandId],\n        [GenderId],\n        [MaritalStatus],\n        [LowerIncomeBound],\n        [UpperIncomeBound]\n    FROM [wwi_ml].[CustomerTest]\n)\n-- Using T-SQL Predict command to score machine learning models. \nSELECT *\nFROM PREDICT (MODEL = (SELECT [model] FROM wwi_ml.AMLModel WHERE [ID] = 'aml-synapse-classifier:1'),\n              DATA = InputData,\n              RUNTIME = ONNX) WITH ([label_out] [bigint])\nGO\n\n-- Display the results.\nSELECT * FROM wwi_ml.CustomerPrediction",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "synapsesql",
+				"poolName": "synapsesql"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

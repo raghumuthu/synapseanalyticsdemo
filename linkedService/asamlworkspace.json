@@ -1,0 +1,17 @@
+{
+	"name": "asamlworkspace",
+	"properties": {
+		"annotations": [],
+		"type": "AzureMLService",
+		"typeProperties": {
+			"subscriptionId": "c0675ddc-d867-4b54-abe8-24d506dffc0e",
+			"resourceGroupName": "DataMigrationService",
+			"mlWorkspaceName": "amlworkspaceann",
+			"authentication": "MSI"
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

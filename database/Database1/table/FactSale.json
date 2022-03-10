@@ -146,8 +146,8 @@
 					"Description": "",
 					"OriginDataTypeName": {
 						"TypeName": "integer",
-						"IsNullable": false,
 						"IsComplexType": false,
+						"IsNullable": false,
 						"Properties": {
 							"HIVE_TYPE_STRING": "integer"
 						}
@@ -174,7 +174,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "",
+				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,
